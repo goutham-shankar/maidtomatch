@@ -37498,3 +37498,14 @@ body .pum-container .et_pb_section .et_pb_button_8:hover {
 		text-align: center
 	}
 }
+
+/* Hide scrollbar for all browsers */
+.no-scrollbar {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+	display: none;
+  }
