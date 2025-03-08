@@ -8668,7 +8668,7 @@ a.et_pb_more_button:after {
 
 .et_pb_bg_layout_light.et_pb_button:hover,
 .et_pb_bg_layout_light .et_pb_button:hover {
-	background-color: rgba(0, 0, 0, .05)
+	background-color: rgb(10, 74, 78)
 }
 
 .et_pb_button:after,
@@ -9313,7 +9313,7 @@ header.et-l.et-l--header:after {
 	.et_pb_bg_layout_light_tablet h4,
 	.et_pb_bg_layout_light_tablet h5,
 	.et_pb_bg_layout_light_tablet h6 {
-		color: #333 !important
+		color: #fff !important
 	}
 
 	.et_pb_module .et_pb_bg_layout_light_tablet.et_pb_button {
@@ -9321,7 +9321,7 @@ header.et-l.et-l--header:after {
 	}
 
 	.et_pb_bg_layout_light_tablet {
-		color: #666 !important
+		color: #fff !important
 	}
 
 	.et_pb_bg_layout_dark_tablet,
@@ -9401,7 +9401,7 @@ header.et-l.et-l--header:after {
 	.et_pb_bg_layout_light_phone h4,
 	.et_pb_bg_layout_light_phone h5,
 	.et_pb_bg_layout_light_phone h6 {
-		color: #333 !important
+		color: #fff !important
 	}
 
 	.et_pb_module .et_pb_bg_layout_light_phone.et_pb_button {
@@ -15460,7 +15460,7 @@ button.et_pb_menu__icon__with_count:after {
 }
 
 .et_pb_bg_layout_light .et-pb-controllers a {
-	background-color: rgba(0, 0, 0, .3)
+	background-color: #ffffff
 }
 
 .et-pb-arrow-next:hover,
@@ -34978,7 +34978,7 @@ html:not(.et_fb_edit_enabled) #et-fb-app .et_pb_code_0:hover {
 
 body #page-container .et_pb_section .et_pb_button_1,
 body .pum-container .et_pb_section .et_pb_button_1 {
-	color: #333333 !important;
+	color: #ffffff !important;
 	background-color: rgb(10, 74, 78)
 }
 
@@ -34997,7 +34997,7 @@ body .pum-container .et_pb_section .et_pb_button_6:hover,
 body #page-container .et_pb_section .et_pb_button_7:hover,
 body .pum-container .et_pb_section .et_pb_button_7:hover {
 	background-image: initial;
-	background-color: #ffde30
+	background-color:  rgb(10, 74, 78);
 }
 
 .et_pb_button_1 {
@@ -35327,7 +35327,7 @@ body #page-container .et_pb_section .et_pb_button_7,
 body .pum-container .et_pb_section .et_pb_button_7,
 body #page-container .et_pb_section .et_pb_button_8,
 body .pum-container .et_pb_section .et_pb_button_8 {
-	color: #000000 !important;
+	
 	border-width: 0px !important;
 	font-size: 15px;
 	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif !important;
