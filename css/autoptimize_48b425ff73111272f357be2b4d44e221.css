@@ -7231,14 +7231,14 @@ body.et-wp-pre-3_8.admin-bar.et_fixed_nav #top-header {
 .et_color_scheme_orange .et_pb_sum,
 .et_color_scheme_orange .form-submit .et_pb_button,
 .et_color_scheme_orange .mobile_menu_bar:before {
-	color: #edb059
+	color: #175a75
 }
 
 .et_color_scheme_orange .et-search-form,
 .et_color_scheme_orange .et_mobile_menu,
 .et_color_scheme_orange .et_pb_pricing li:before,
 .et_color_scheme_orange .nav li ul {
-	border-color: #edb059
+	border-color: #175a75
 }
 
 .et_color_scheme_orange .et-cart-info,
@@ -30208,7 +30208,7 @@ a {
 #main-header .nav li ul,
 .et-search-form,
 #main-header .et_mobile_menu {
-	background-color: #f4cd00
+	background-color: rgb(10, 74, 78)
 }
 
 #main-header .nav li ul {
@@ -30303,8 +30303,9 @@ body.et_vertical_nav .container.et_search_form_container .et-search-form input {
 
 body .et_pb_button {
 	font-size: 16px;
-	background-color: #f3cd00;
+	background-color: rgb(10, 74, 78);
 	border-width: 0px !important;
+
 	border-radius: 5px;
 	font-weight: bold;
 	font-style: normal;
@@ -30314,7 +30315,7 @@ body .et_pb_button {
 
 body.et_pb_button_helper_class .et_pb_button,
 body.et_pb_button_helper_class .et_pb_module.et_pb_button {
-	color: #333333
+	color: #fff
 }
 
 body .et_pb_button:after {
@@ -30659,7 +30660,7 @@ select {
 		height: 50px;
 		font-size: 22px !important;
 		color: #000 !important;
-		background: #f4cd00;
+		background: rgb(10, 74, 78);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -30859,7 +30860,7 @@ body .pum-container .et_pb_section .et_pb_button_1_tb_header {
 	font-size: 16px;
 	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif !important;
 	font-weight: 700 !important;
-	background-color: #175975
+	background-color: rgb(10, 74, 78)
 }
 
 body #page-container .et_pb_section .et_pb_button_1_tb_header:before,
@@ -30888,14 +30889,14 @@ body .pum-container .et_pb_section .et_pb_button_1_tb_header:before {
 
 body #page-container .et_pb_section .et_pb_button_2_tb_header,
 body .pum-container .et_pb_section .et_pb_button_2_tb_header {
-	color: #000000 !important;
+	
 	border-width: 0px !important;
 	border-radius: 5px;
 	font-size: 16px;
 	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif !important;
 	font-weight: 700 !important;
 	text-transform: uppercase !important;
-	background-color: #f4cd00
+	background-color: rgb(10, 74, 78)
 }
 
 body #page-container .et_pb_section .et_pb_button_2_tb_header:before,
@@ -30908,7 +30909,7 @@ body .pum-container .et_pb_section .et_pb_button_2_tb_header:after {
 body #page-container .et_pb_section .et_pb_button_2_tb_header:hover,
 body .pum-container .et_pb_section .et_pb_button_2_tb_header:hover {
 	background-image: initial;
-	background-color: #ffde30
+	background-color: rgb(10, 74, 78)
 }
 
 .et_pb_button_2_tb_header {
@@ -31538,14 +31539,14 @@ body .pum-container .et_pb_section .et_pb_button_1_tb_footer {
 	font-size: 16px;
 	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif !important;
 	font-weight: 700 !important;
-	background-color: #f4cd00
+	background-color: rgb(10, 74, 78)
 }
 
 body #page-container .et_pb_section .et_pb_button_1_tb_footer:hover,
 body .pum-container .et_pb_section .et_pb_button_1_tb_footer:hover {
-	color: #000000 !important;
+
 	background-image: initial;
-	background-color: #ffde30
+	background-color: rgb(10, 74, 78)
 }
 
 .et_pb_button_1_tb_footer {
@@ -31591,7 +31592,7 @@ body .pum-container .et_pb_section .et_pb_button_1_tb_footer:hover {
 	padding-right: 25px;
 	padding-bottom: 25px;
 	padding-left: 25px;
-	background-color: #175975 !important
+	background-color:rgb(10, 74, 78)!important
 }
 
 .et_pb_row_2_tb_footer.et_pb_row,
@@ -31648,7 +31649,7 @@ body .pum-container .et_pb_section .et_pb_button_1_tb_footer:hover {
 .et_pb_toggle_3_tb_footer.et_pb_toggle_close .et_pb_toggle_title:before {
 	font-size: 24px;
 	right: -4px;
-	color: #f4cd00
+	color: rgb(10, 74, 78)
 }
 
 .et_pb_toggle_1_tb_footer.et_pb_toggle h5,
@@ -32309,9 +32310,9 @@ body .pum-container .et_pb_section .et_pb_button_1_tb_footer:hover {
 #custom-effect:hover {
 	transform: translateY(-5px) scale3d(1.025, 1.025, 1.025);
 	transition: 0.4s !important;
-	color: #000000 !important;
+	
 	background-image: initial;
-	background-color: #ffde30 !important
+	background-color: rgb(10, 74, 78) !important
 }
 
 footer .et_pb_social_media_follow a:hover {
@@ -32327,13 +32328,13 @@ footer .et_pb_social_media_follow a:hover {
 }
 
 #mobile_menu1 #menu-item-27038.hide-desktop.btn a {
-	background: #f4cd00 !important;
+	background: rgb(10, 74, 78) !important;
 	margin: 10px;
 	color: #000 !important
 }
 
 #mobile_menu1 #menu-item-40119.hide-desktop.btn a {
-	background: #f4cd00 !important;
+	background: rgb(10, 74, 78) !important;
 	margin: 10px;
 	color: #000 !important
 }
@@ -32571,7 +32572,7 @@ body #main-content {
 
 .quote-box .et_pb_text_inner:after {
 	content: "\f005\f005\f005\f005\f005";
-	color: #f4cd00;
+	color: rgb(10, 74, 78);
 	font-weight: 900;
 	font-family: "Font Awesome 5 Free";
 	display: block;
@@ -33116,7 +33117,7 @@ body:not(.et_pb_pagebuilder_layout) p {
 .maid2match-popupform .maid2match-Header-form-container {
 	width: 100% !important;
 	background: rgba(0, 0, 0, 1);
-	border: 1px solid #F4CD00;
+	border: 1px solid rgb(10, 74, 78);
 	min-width: 400px;
 	max-width: 1000px;
 	height: 320px
@@ -33214,7 +33215,7 @@ input.form-control {
 .maid2match-Header-container .btn-orange,
 .maid2match-popupform .btn-orange {
 	color: #000;
-	background: #f4cd00;
+	background: rgb(10, 74, 78);
 	font-weight: bold;
 	border-radius: 30px;
 	border: none;
@@ -34354,7 +34355,7 @@ ul.checklist li {
 
 .m2m-btn-wrapper button {
 	color: #000;
-	background: #f4cd00;
+	background: rgb(10, 74, 78);
 	font-weight: bold;
 	border-radius: 30px;
 	width: 100%;
@@ -34654,7 +34655,7 @@ body .pum-container .et_pb_section .et_pb_button_0 {
 	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif !important;
 	font-weight: 700 !important;
 	text-transform: uppercase !important;
-	background-color: #f4cd00
+	background-color: rgb(10, 74, 78)
 }
 
 body #page-container .et_pb_section .et_pb_button_0:hover,
@@ -34978,7 +34979,7 @@ html:not(.et_fb_edit_enabled) #et-fb-app .et_pb_code_0:hover {
 body #page-container .et_pb_section .et_pb_button_1,
 body .pum-container .et_pb_section .et_pb_button_1 {
 	color: #333333 !important;
-	background-color: #F4CD00
+	background-color: rgb(10, 74, 78)
 }
 
 body #page-container .et_pb_section .et_pb_button_1:hover,
@@ -35249,7 +35250,7 @@ body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc 
 .et_pb_row_9,
 .et_pb_row_10 {
 	background-color: RGBA(255, 255, 255, 0);
-	border-color: #F4CD00;
+	border-color: rgb(10, 74, 78);
 	box-shadow: 0px 2px 10px 0px RGBA(255, 255, 255, 0)
 }
 
@@ -35331,7 +35332,7 @@ body .pum-container .et_pb_section .et_pb_button_8 {
 	font-size: 15px;
 	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif !important;
 	font-weight: 700 !important;
-	background-color: #f4cd00
+	background-color:rgb(10, 74, 78)
 }
 
 .et_pb_button_2,
@@ -35344,7 +35345,7 @@ body .pum-container .et_pb_section .et_pb_button_8 {
 }
 
 .et_pb_row_8 {
-	border-color: #F4CD00;
+	border-color: rgb(10, 74, 78);
 	box-shadow: 0px 2px 10px 0px RGBA(255, 255, 255, 0)
 }
 
