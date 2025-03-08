@@ -30623,7 +30623,7 @@ select {
 }
 
 #mobile_menu1 .hide-desktop.btn a {
-	background: #1b6b86;
+	background: rgb(10, 74, 78);
 	color: #fff !important;
 	border-radius: 5px;
 	text-align: center
@@ -32320,7 +32320,7 @@ footer .et_pb_social_media_follow a:hover {
 }
 
 #mobile_menu1 .menu-item-27037 a {
-	background: #1b6b86;
+	background: rgb(10, 74, 78);
 	color: #fff !important;
 	border-radius: 5px;
 	text-align: center;
@@ -32330,7 +32330,7 @@ footer .et_pb_social_media_follow a:hover {
 #mobile_menu1 #menu-item-27038.hide-desktop.btn a {
 	background: rgb(10, 74, 78) !important;
 	margin: 10px;
-	color: #000 !important
+
 }
 
 #mobile_menu1 #menu-item-40119.hide-desktop.btn a {
@@ -32410,7 +32410,7 @@ ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after,
 	position: relative;
 	font-family: "ETModules";
 	content: '\33';
-	color: #175A75;
+	color: rgb(10, 74, 78);
 	border-radius: 50%;
 	padding: 3px;
 	font-size: 25px
