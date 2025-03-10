@@ -336,21 +336,21 @@
 	<div >
 		<div >
 
-			<header class="bg-white text-black shadow-md sticky top-0 z-50">
-				<div class="container mx-auto flex justify-between items-center py-4 px-6  ">
+			<header class="bg-transparent fixed w-full text-black shadow-md top-0 z-50 h-24 transition-all duration-300" id="mainHeader">
+				<div class="flex justify-between items-center py-1 px-6  h-full">
 					<div class="flex items-center">
 						<a href="/">
-							<img src="images/elvllog.png" alt="Maid2Match Logo" class="h-16 w-auto">
+							<img src="images/logo.png" alt="illawarra Logo" class="h-40 w-auto transition-all duration-300" id="mainLogo">
 						</a>
 					</div>
-					<nav class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300 space-x-6">
+					<nav class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300 space-x-6" id="mainMenu">
 						<div class="relative group">
-							<a href="#" class="text-black hover:text-teal-800">Services</a>
+							<a href="#" class="text-black font-semibold hover:text-white transition-colors duration-300">Services</a>
 							
 						</div>
-						<a href="/maidtomatch/pricing" class="text-black hover:text-teal-800">Pricing</a>
-						<a href="/cop.html" class="text-black hover:text-teal-800">Reviews</a>
-						<a href="/maidtomatch/about" class="text-black hover:text-teal-800">About</a>
+						<a href="/maidtomatch/pricing" class="text-black font-semibold hover:text-white transition-colors duration-300">Pricing</a>
+						<a href="/cop.html" class="text-black font-semibold hover:text-white transition-colors duration-300">Reviews</a>
+						<a href="/maidtomatch/about" class="text-black font-semibold hover:text-white transition-colors duration-300">About</a>
 					</nav>
 					<div class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300">
 						<a href="tel:1800207686" class="bg-teal-800 text-white px-4 py-2 rounded-lg hover:bg-teal-900">
@@ -363,14 +363,58 @@
 					</button>
 				</div>
 				<div class="hidden md:hidden bg-white border-t p-4" id="mobile-menu">
-					<a href="#" class="block py-2 text-black">Services</a>
-					<a href="/pricing.html" class="block py-2 text-black">Pricing</a>
-					<a href="/" class="block py-2 text-black">Reviews</a>
-					<a href="/" class="block py-2 text-black">About</a>
+				
+						<a href="#" class="block py-2 text-black">Services</a>
+						<a href="/pricing.html" class="block py-2 text-black">Pricing</a>
+						<a href="/" class="block py-2 text-black">Reviews</a>
+						<a href="/" class="block py-2 text-black">About</a>
+				
 					
 					<a href="tel:1800207686" class="block bg-teal-800 text-white px-4 py-2 rounded-lg mt-2 text-center">Call Us: 1800 207 686</a>
 				</div>
 			</header>
+			<script>
+				document.addEventListener("DOMContentLoaded", function() {
+					const header = document.getElementById('mainHeader');
+					const logo = document.getElementById('mainLogo');
+					const menuLinks = document.querySelectorAll('#mainMenu a');
+					const scrollThreshold = 600; // Adjust this value as needed
+			
+					function updateHeaderStyles() {
+						if (window.scrollY > scrollThreshold) {
+							header.classList.add('bg-white', 'text-black');
+							header.classList.remove('bg-transparent');
+							logo.src = 'images/logo-black.png'; // Replace with your black logo
+							logo.classList.add('h-14');
+							menuLinks.forEach(link => {
+								link.classList.remove('text-white');
+								link.classList.add('text-gray-800');
+							});
+						} else {
+							header.classList.remove('bg-white', 'text-black',);
+							header.classList.add('bg-transparent');
+							logo.src = 'images/logo.png'; // Revert to your original logo
+							logo.classList.remove('h-14');
+							logo.classList.add('h-40');
+							menuLinks.forEach(link => {
+								link.classList.remove('text-gray-800');
+								link.classList.add('text-black');
+							});
+						}
+					}
+			
+					// Initial update on page load
+					updateHeaderStyles();
+			
+					// Update on scroll
+					window.addEventListener('scroll', updateHeaderStyles);
+			
+					// Mobile menu toggle
+					document.getElementById("mobile-menu-button").addEventListener("click", function() {
+						document.getElementById("mobile-menu").classList.toggle("hidden");
+					});
+				});
+			</script>
 			<script>
 				document.getElementById("mobile-menu-button").addEventListener("click", function() {
 					document.getElementById("mobile-menu").classList.toggle("hidden");
@@ -408,30 +452,30 @@
 
 
 											<div
-												class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-left text-white">
+												class="bg-gradient-to-r from-black to-transparent min-h-screen flex justify-center flex-col md:px-16  relative z-10 text-left text-white">
 												<!-- Tag line above the main content -->
 												<div class="mb-8 md:mb-8">
 													<span
-														class="whitespace-nowrap px-5 py-2 bg-teal-100 text-teal-800 rounded-full font-medium hover:bg-teal-200 transition duration-300">
+														class="whitespace-nowrap px-5 py-2 bg-teal-100 text-teal-800 rounded-full font-medium hover:bg-teal-200 ">
 														Professional Home Cleaning Services
 													</span>
 												</div>
 
 
-												<div>
+												<div class="">
 													<!-- Removed mx-auto to align text to the left instead of center -->
 													<h1
 														class="text-3xl text-white sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
 														Clean Spaces,<br class="hidden sm:block">Clear Minds
 													</h1>
 
-													<p class="mt-6 text-lg md:text-xl opacity-90">
+													<p class="mt-6 text-lg md:text-lg opacity-90">
 														Experience top-notch cleaning with our trusted
 														professionals,</br>
 														leaving your home spotless and refreshed.
 													</p>
 
-													<div class="flex gap-4">
+													<div class="flex gap-4 mt-4">
 														<a href="/"
 															class="px-6 py-3 bg-emerald-600 text-white font-semibold rounded-lg shadow-md">View
 															Pricing</a>
@@ -442,6 +486,7 @@
 
 
 												</div>
+											</div>
 
 
 										</section>
@@ -458,21 +503,6 @@
 
 
 											</div>
-											<div
-												class="et_pb_column et_pb_column_1_2 et_pb_column_1    et_pb_css_mix_blend_mode_passthrough">
-
-
-
-
-
-												<div class="et_pb_module et_pb_image et_pb_image_1">
-
-
-
-
-
-												</div>
-											</div>
 										</div>
 
 									</div>
@@ -481,7 +511,7 @@
 											<!-- Title -->
 											<div class="text-center mb-12">
 												<p class="text-teal-800 font-semibold tracking-wider mb-2 uppercase">Why
-													Illawara?</p>
+													Illawarra Crew?</p>
 												<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-black">More
 													Than Just A Cleaning Service</h2>
 											</div>
