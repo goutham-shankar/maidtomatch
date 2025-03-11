@@ -18,7 +18,7 @@
 
 	<script id="diviarea-loader">window.DiviPopupData = window.DiviAreaConfig = { "zIndex": 1000000, "animateSpeed": 400, "triggerClassPrefix": "show-popup-", "idAttrib": "data-popup", "modalIndicatorClass": "is-modal", "blockingIndicatorClass": "is-blocking", "defaultShowCloseButton": true, "withCloseClass": "with-close", "noCloseClass": "no-close", "triggerCloseClass": "close", "singletonClass": "single", "darkModeClass": "dark", "noShadowClass": "no-shadow", "altCloseClass": "close-alt", "popupSelector": ".et_pb_section.popup", "initializeOnEvent": "et_pb_after_init_modules", "popupWrapperClass": "area-outer-wrap", "fullHeightClass": "full-height", "openPopupClass": "da-overlay-visible", "overlayClass": "da-overlay", "exitIndicatorClass": "on-exit", "hoverTriggerClass": "on-hover", "clickTriggerClass": "on-click", "onExitDelay": 2000, "notMobileClass": "not-mobile", "notTabletClass": "not-tablet", "notDesktopClass": "not-desktop", "baseContext": "body", "activePopupClass": "is-open", "closeButtonClass": "da-close", "withLoaderClass": "with-loader", "debug": false, "ajaxUrl": "https:\/\/www.maid2match.com.au\/wp-admin\/admin-ajax.php", "sys": [] }; var divimode_loader = function () { "use strict"; !function (t) { t.DiviArea = t.DiviPopup = { loaded: !1 }; var n = t.DiviArea, i = n.Hooks = {}, o = {}; function r(t, n, i) { var r, e, c; if ("string" == typeof t) if (o[t]) { if (n) if ((r = o[t]) && i) for (c = r.length; c--;)(e = r[c]).callback === n && e.context === i && (r[c] = !1); else for (c = r.length; c--;)r[c].callback === n && (r[c] = !1) } else o[t] = [] } function e(t, n, i, r) { if ("string" == typeof t) { var e = { callback: n, priority: i, context: r }, c = o[t]; c ? (c.push(e), c = function (t) { var n, i, o, r, e = t.length; for (r = 1; r < e; r++)for (n = t[r], i = r; i > 0; i--)(o = t[i - 1]).priority > n.priority && (t[i] = o, t[i - 1] = n); return t }(c)) : c = [e], o[t] = c } } function c(t, n, i) { "string" == typeof n && (n = [n]); var r, e, c = []; for (r = 0; r < n.length; r++)Array.prototype.push.apply(c, o[n[r]]); for (e = 0; e < c.length; e++) { var a = void 0; c[e] && "function" == typeof c[e].callback && ("filter" === t ? void 0 !== (a = c[e].callback.apply(c[e].context, i)) && (i[0] = a) : c[e].callback.apply(c[e].context, i)) } if ("filter" === t) return i[0] } i.silent = function () { return i }, n.removeFilter = i.removeFilter = function (t, n) { r(t, n) }, n.removeAction = i.removeAction = function (t, n) { r(t, n) }, n.applyFilters = i.applyFilters = function (t) { for (var n = [], i = arguments.length - 1; i-- > 0;)n[i] = arguments[i + 1]; return c("filter", t, n) }, n.doAction = i.doAction = function (t) { for (var n = [], i = arguments.length - 1; i-- > 0;)n[i] = arguments[i + 1]; c("action", t, n) }, n.addFilter = i.addFilter = function (n, i, o, r) { e(n, i, parseInt(o || 10, 10), r || t) }, n.addAction = i.addAction = function (n, i, o, r) { e(n, i, parseInt(o || 10, 10), r || t) }, n.addActionOnce = i.addActionOnce = function (n, i, o, c) { e(n, i, parseInt(o || 10, 10), c || t), e(n, (function () { r(n, i) }), 1 + parseInt(o || 10, 10), c || t) } }(window); return {} }();
 	</script>
-	
+
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 	<!-- This site is optimized with the Yoast SEO plugin v24.6 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -118,86 +118,7 @@
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 
 	<meta name="ir-site-verification-token" value="1816519753">
-	<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Illavara-Crew",
-  "url": "https://www.maid2match.com.au",
-  "logo": "https://www.maid2match.com.au/wp-content/uploads/2024/10/Maid2Match_Logo_CorrectDimensions_200x200_final.png",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+61416592879",
-    "contactType": "Customer Service",
-    "email": "info@illawaracrew.com.",
-    "availableLanguage": ["English"],
-    "areaServed": "AU",
-    "hoursAvailable": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "07:00",
-      "closes": "18:00"
-    }
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Level 1, 1 Burelli Street",
-    "addressLocality": "Wollongong",
-    "addressRegion": "NSW",
-    "postalCode": "2500",
-    "addressCountry": "AU"
-  },
-  "sameAs": [
-    "https://www.facebook.com/Maid2Match/",
-    "https://www.instagram.com/maid2match/",
-    "https://www.linkedin.com/company/maid2match/",
-    "https://www.youtube.com/@maid2match"
-  ],
-  "makesOffer": [
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "House Cleaning"
-      },
-      "priceCurrency": "AUD",
-      "url": "https://www.maid2match.com.au/house-cleaning/"
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "End of Lease Cleaning"
-      },
-      "priceCurrency": "AUD",
-      "url": "https://www.maid2match.com.au/end-of-lease-cleaning/"
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Office Cleaning"
-      },
-      "priceCurrency": "AUD",
-      "url": "https://www.maid2match.com.au/office-cleaning/"
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "NDIS Cleaning"
-      },
-      "priceCurrency": "AUD",
-      "url": "https://www.maid2match.com.au/ndis-cleaning/"
-    }
-  ]
-}
+
 </script>
 	<style>
 	</style>
@@ -337,31 +258,38 @@
 
 <body data-rsssl="1"
 	class="home page-template-default page page-id-38325 et-tb-has-template et-tb-has-header et-tb-has-footer et_button_no_icon et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
-	<div >
-		<div >
+	<div>
+		<div>
 
-			<header class="bg-transparent fixed w-full text-black shadow-md top-0 z-50 h-24 transition-all duration-300" id="mainHeader">
+			<header class="bg-transparent fixed w-full text-black shadow-md top-0 z-50 h-24 transition-all duration-300"
+				id="mainHeader">
 				<div class="flex justify-between items-center py-1 px-6  h-full">
 					<div class="flex items-center">
 						<a href="/">
-							<img src="images/logo.png" alt="illawarra Logo" class="h-40 w-auto transition-all duration-300" id="mainLogo">
+							<img src="images/logo.png" alt="illawarra Logo"
+								class="h-40 w-auto transition-all duration-300" id="mainLogo">
 						</a>
 					</div>
-					<nav class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300 space-x-6" id="mainMenu">
+					<nav class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300 space-x-6"
+						id="mainMenu">
 						<div class="relative group">
-							<a href="#" class="text-black font-semibold hover:text-white transition-colors duration-300">Services</a>
-							
+							<a href="#"
+								class="text-black font-semibold hover:text-white transition-colors duration-300">Services</a>
+
 						</div>
-						<a href="/maidtomatch/pricing" class="text-black font-semibold hover:text-white transition-colors duration-300">Pricing</a>
-						<a href="/cop.html" class="text-black font-semibold hover:text-white transition-colors duration-300">Reviews</a>
-						<a href="/maidtomatch/about" class="text-black font-semibold hover:text-white transition-colors duration-300">About</a>
+						<a href="/maidtomatch/pricing"
+							class="text-black font-semibold hover:text-white transition-colors duration-300">Pricing</a>
+						<a href="/cop.html"
+							class="text-black font-semibold hover:text-white transition-colors duration-300">Reviews</a>
+						<a href="/maidtomatch/about"
+							class="text-black font-semibold hover:text-white transition-colors duration-300">About</a>
 					</nav>
 					<div class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300">
 						<a href="tel:1800207686" class="bg-teal-800 text-white px-4 py-2 rounded-lg hover:bg-teal-900">
 							Call Us: 1800 207 686
 						</a>
 					</div>
-					
+
 					<button class="md:hidden text-black focus:outline-none" id="mobile-menu-button">
 						☰
 					</button>
@@ -378,7 +306,10 @@
 				</div>
 			</header>
 			<script>
-				document.addEventListener("DOMContentLoaded", function() {
+				document.getElementById("mobile-menu-button").addEventListener("click", function () {
+					document.getElementById("mobile-menu").classList.toggle("hidden");
+				});
+				document.addEventListener("DOMContentLoaded", function () {
 					const header = document.getElementById('mainHeader');
 					const logo = document.getElementById('mainLogo');
 					const menuLinks = document.querySelectorAll('#mainMenu a');
@@ -406,25 +337,19 @@
 							});
 						}
 					}
-			
+
 					// Initial update on page load
 					updateHeaderStyles();
-			
+
 					// Update on scroll
 					window.addEventListener('scroll', updateHeaderStyles);
-			
-					// Mobile menu toggle
-					document.getElementById("mobile-menu-button").addEventListener("click", function() {
-						document.getElementById("mobile-menu").classList.toggle("hidden");
-					});
+
+
 				});
+
+
 			</script>
-			<script>
-				document.getElementById("mobile-menu-button").addEventListener("click", function() {
-					document.getElementById("mobile-menu").classList.toggle("hidden");
-				});
-			</script>
-		 <!-- heaader  -->
+			<!-- heaader  -->
 			<div id="et-main-area">
 
 				<div id="main-content">
@@ -443,15 +368,18 @@
 										<section class="hero-bg min-h-screen   flex items-center relative">
 											<!-- Background Image -->
 											<div class="absolute inset-0 overflow-hidden">
-												<video autoplay loop muted playsinline class="w-full h-full object-cover">
+												<video autoplay loop muted playsinline
+													class="w-full h-full object-cover">
 													<source src="file.mp4" type="video/mp4">
 													Your browser does not support the video tag.
 												</video>
-											
+
 												<!-- Dark overlay applied only to the left side -->
-												<div class="absolute inset-0 bg-gradient-to-r from-black/200 to-black/300"></div>
+												<div
+													class="absolute inset-0 bg-gradient-to-r from-black/200 to-black/300">
+												</div>
 											</div>
-											
+
 
 
 
@@ -989,18 +917,12 @@
 											</div>
 										</div>
 										<div
-											class="et_pb_button_module_wrapper et_pb_button_7_wrapper et_pb_button_alignment_center et_pb_module ">
-											<a class="et_pb_button  et_pb_button_7 et_pb_bg_layout_light" href="/">Learn
-												More About
-												illawara Crew</a>
+											class="et_pb_button_module_wrapper et_pb_button_8_wrapper et_pb_button_alignment_center et_pb_button_alignment_tablet_left et_pb_button_alignment_phone_center et_pb_module ">
+											<a style="background-color: rgb(10, 74, 78); color: white !important;"
+												class="et_pb_button et_pb_button_8 maid2matchpopup-trigger et_pb_bg_layout_light"
+												href="/">About ILLAWARA ></a>
 										</div>
-										<div
-											class="et_pb_module et_pb_code et_pb_code_2  et_pb_text_align_center-phone">
 
-
-
-
-										</div>
 									</div>
 
 
@@ -1080,29 +1002,7 @@
 
 
 								</div>
-								<div class="et_pb_row et_pb_row_18">
-									<div
-										class="et_pb_column et_pb_column_4_4 et_pb_column_42  et_pb_css_mix_blend_mode_passthrough et-last-child">
 
-
-
-
-										<div
-											class="et_pb_module et_pb_text et_pb_text_32  et_pb_text_align_left et_pb_bg_layout_light">
-
-
-
-
-											<div class="et_pb_text_inner">
-												<div id="mediavine-settings" data-blocklist-all="1"></div>
-											</div>
-										</div>
-									</div>
-
-
-
-
-								</div>
 
 
 							</div>
@@ -1126,7 +1026,7 @@
 
 				<!-- Column 1: Logo & Social -->
 				<div class="flex flex-col items-center md:items-start space-y-6">
-					<img src="./images/elvllog.png" alt="Maid2Match Logo" class="h-20 mb-4">
+					<img src="/images/logo.png" alt="Bathroom" class=" h-64 md:h-64 lg:h-80 object-cover rounded-lg">
 					<p class="text-lg font-light">Australia's Favourite Cleaning Service</p>
 					<a href="#"
 						class="inline-block px-8 py-3 bg-white text-teal-700 font-medium rounded-lg shadow-lg hover:bg-teal-50 transition duration-300">
