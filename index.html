@@ -362,7 +362,7 @@
 						☰
 					</button>
 				</div>
-				<div class="hidden md:hidden bg-white border-t p-4" id="mobile-menu">
+				<div class="hidden md:hidden bg-white/100 border-t p-4" id="mobile-menu">
 				
 						<a href="#" class="block py-2 text-black">Services</a>
 						<a href="/pricing.html" class="block py-2 text-black">Pricing</a>
@@ -374,6 +374,9 @@
 				</div>
 			</header>
 			<script>
+				document.getElementById("mobile-menu-button").addEventListener("click", function() {
+					document.getElementById("mobile-menu").classList.toggle("hidden");
+				});
 				document.addEventListener("DOMContentLoaded", function() {
 					const header = document.getElementById('mainHeader');
 					const logo = document.getElementById('mainLogo');
@@ -409,16 +412,10 @@
 					// Update on scroll
 					window.addEventListener('scroll', updateHeaderStyles);
 			
-					// Mobile menu toggle
-					document.getElementById("mobile-menu-button").addEventListener("click", function() {
-						document.getElementById("mobile-menu").classList.toggle("hidden");
-					});
+			
 				});
-			</script>
-			<script>
-				document.getElementById("mobile-menu-button").addEventListener("click", function() {
-					document.getElementById("mobile-menu").classList.toggle("hidden");
-				});
+		
+				
 			</script>
 		 <!-- heaader  -->
 			<div id="et-main-area">
