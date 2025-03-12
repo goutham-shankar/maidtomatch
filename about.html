@@ -121,111 +121,9 @@
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="speculation-rules 1.4.0">
-    <style>
-        .wp-block-gallery.is-cropped .blocks-gallery-item picture {
-            height: 100%;
-            width: 100%;
-        }
-    </style>
-    <script>function enqueue_custom_plugin_script() {
-            wp_enqueue_script(
-                'custom-plugin-script',            // Script handle (unique identifier)
-                plugins_url('wp-content/plugins/sabir-popup-form/template/bond-cleaning-form.php', __FILE__),  // Path to your script file
-                array(),                           // Dependencies (keep empty if no dependencies)
-                '1.0',                             // Version number
-                true                               // Load in footer (set false to load in header)
-            );
-        }
-        add_action('wp_enqueue_scripts', 'enqueue_custom_plugin_script', 1); // Priority 1 (loads first)
-    </script>
-    <script>document.addEventListener("DOMContentLoaded", function () {
-            // Add a click event listener to all elements with the specified class
-            document.querySelectorAll(".maid2matchpopup-trigger").forEach(function (button) {
-                button.addEventListener("click", function () {
-                    // Open the popup by showing the element with ID #cro
-                    const popup = document.querySelector("#cro");
-                    if (popup) {
-                        popup.style.display = "block"; // Or any other display logic based on your design
-                    }
-                });
-            });
-        });
-    </script>
-    <script>document.addEventListener('DOMContentLoaded', function () {
-            if (window.innerWidth <= 767) {
-                var carousel = document.querySelector('.housing-team-row');
-                var columns = carousel.querySelectorAll('.housing-team-col');
-                var currentIndex = 0;
-                var totalColumns = columns.length;
-                function updateCarousel() {
-                    columns.forEach(function (column, index) {
-                        column.style.display = (index === currentIndex) ? 'block' : 'none';
-                    });
-                }
-                function moveNext() {
-                    currentIndex = (currentIndex + 1) % totalColumns;
-                    updateCarousel();
-                }
-                function movePrev() {
-                    currentIndex = (currentIndex - 1 + totalColumns) % totalColumns;
-                    updateCarousel();
-                }
-                var leftArrow = document.querySelector('.housing-carousel-arrow.left');
-                var rightArrow = document.querySelector('.housing-carousel-arrow.right');
-                if (leftArrow) {
-                    leftArrow.addEventListener('click', movePrev);
-                }
-                if (rightArrow) {
-                    rightArrow.addEventListener('click', moveNext);
-                }
-                window.addEventListener('resize', function () {
-                    if (window.innerWidth > 767) {
-                        columns.forEach(function (column) {
-                            column.style.display = '';
-                        });
-                    } else {
-                        updateCarousel();
-                    }
-                });
-                updateCarousel();
-            }
-        });</script>
-    <style type="text/css">
-        .hidden {
-            opacity: 0;
-        }
-    </style>
-    <script type="text/javascript">window.addEventListener('DOMContentLoaded', function () {
-            jQuery('html').addClass('hidden');
-            jQuery(document).ready(function () {
-                jQuery('html').removeClass('hidden');
-            });
-        });</script>
-    <script type="text/javascript">window.addEventListener('DOMContentLoaded', function () {
-            jQuery(document).ready(function () {
-                var is_mobile = false;
-
-                if (jQuery('#isMobile').css('display') == 'none') {
-                    is_mobile = true;
-                }
-
-                // now I can use is_mobile to run javascript conditionally
-
-                if (is_mobile == true) {
-                    jQuery('#popup_iframe').attr('scrolling', 'yes');
-                }
-
-                jQuery(document).on("click", ".maid2matchpopup-trigger", function (e) {
-                    if (is_mobile == true) {
-                        jQuery('#popup_iframe').attr('scrolling', 'yes');
-                    } else {
-                        jQuery('#popup_iframe').attr('scrolling', 'no');
-                    }
-
-
-                });
-            });
-        });</script>
+   
+   
+    
     <link rel="icon"
         href="https://img1.wsimg.com/isteam/ip/74537aa5-897b-4082-ae11-bc94c96d7a1d/favicon/83e23802-7080-43f5-8e94-dbcba944660b/5034766c-edcc-4bbc-a66a-3fb977715bc8.png/:/rs=w:24,h:24,m"
         sizes="32x32">
@@ -236,19 +134,8 @@
         href="https://img1.wsimg.com/isteam/ip/74537aa5-897b-4082-ae11-bc94c96d7a1d/favicon/83e23802-7080-43f5-8e94-dbcba944660b/5034766c-edcc-4bbc-a66a-3fb977715bc8.png/:/rs=w:24,h:24,m">
     <meta name="msapplication-TileImage"
         content="https://www.maid2match.com.au/wp-content/uploads/2024/12/cropped-Maid2Match-Favicon-270x270.png">
-    <noscript>
-        <style id="rocket-lazyload-nojs-css">
-            .rll-youtube-player,
-            [data-lazy-src] {
-                display: none !important;
-            }
-        </style>
-    </noscript>
-    <style id="rocket-lazyrender-inline-css">
-        [data-wpr-lazyrender] {
-            content-visibility: auto;
-        }
-    </style>
+    
+    
     <meta name="generator" content="WP Rocket 3.18.2"
         data-wpr-features="wpr_defer_js wpr_lazyload_iframes wpr_automatic_lazy_rendering wpr_oci wpr_desktop">
 </head>
