@@ -261,31 +261,34 @@
 	<div>
 		<div>
 
-			<header class="bg-white text-black shadow-md sticky top-0 z-50">
-				<div class="container mx-auto flex justify-between items-center py-4 px-6  ">
+			<header class="bg-transparent fixed w-full text-black shadow-md top-0 z-50 h-24 transition-all duration-300"
+				id="mainHeader">
+				<div class="flex justify-between items-center py-1 px-6  h-full">
 					<div class="flex items-center">
 						<a href="/">
-							<img src="images/logo-black.png" alt="Illawarra " class="h-16 w-auto">
+							<img src="images/logo.png" alt="illawarra Logo"
+								class="h-40 w-auto transition-all duration-300" id="mainLogo">
 						</a>
 					</div>
 					<nav class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300 space-x-6"
 						id="mainMenu">
 						<div class="relative group">
-							<a href="#"
+							<a href="/services.html"
 								class="text-black font-semibold hover:text-white transition-colors duration-300">Services</a>
 
 						</div>
-						<a href="/maidtomatch/pricing"
+						<a href="/pricing.html"
 							class="text-black font-semibold hover:text-white transition-colors duration-300">Pricing</a>
-						<a href="/cop.html"
-							class="text-black font-semibold hover:text-white transition-colors duration-300">Reviews</a>
-						<a href="/maidtomatch/about"
+						<!-- <a href="/reviews.html"
+							class="text-black font-semibold hover:text-white transition-colors duration-300">Reviews</a> -->
+						<a href="/about.html"
 							class="text-black font-semibold hover:text-white transition-colors duration-300">About</a>
 					</nav>
 					<div class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300">
 						<a href="tel:1800207686" class="bg-teal-800 text-white px-4 py-2 rounded-lg hover:bg-teal-900">
 							Call Us: 1800 207 686
 						</a>
+						
 					</div>
 
 					<button class="md:hidden text-black focus:outline-none" id="mobile-menu-button">
@@ -293,16 +296,14 @@
 					</button>
 				</div>
 				<div class="hidden md:hidden bg-white border-t p-4" id="mobile-menu">
-
-					<a href="/services.html" class="block py-2 text-black">Services</a>
-					<a href="/pricing.html" class="block py-2 text-black">Pricing</a>
-					<a href="/reviews.html" class="block py-2 text-black">Reviews</a>
-					<a href="/about.html" class="block py-2 text-black">About</a>
-
-
-					<a href="tel:1800207686"
-						class="block bg-teal-800 text-white px-4 py-2 rounded-lg mt-2 text-center">Call Us: 1800 207
-						686</a>
+				
+						<a href="/services" class="block py-2 text-black">Services</a>
+						<a href="/pricing.html" class="block py-2 text-black">Pricing</a>
+						<!-- <a href="/reviews.html" class="block py-2 text-black">Reviews</a> -->
+						<a href="/about.html" class="block py-2 text-black">About</a>
+				
+					  
+					<a href="tel:1800207686" class="block bg-teal-800 text-white px-4 py-2 rounded-lg mt-2 text-center">Call Us: 1800 207 686</a>
 				</div>
 			</header>
 			<script>
@@ -318,139 +319,7 @@
 						<div class="entry-content">
 							<div class="et-l et-l--post">
 								<div class="et_builder_inner_content et_pb_gutters3">
-									<!-- Hero / Pricing Section -->
-									<div class="py-12 bg-gradient-to-r from-teal-50 via-white to-white">
-										<div class="max-w-screen-xl mx-auto px-6">
-											<div class="flex flex-col md:flex-row items-center gap-8">
-												<!-- Left Text Section -->
-												<div class="md:w-1/2 text-center md:text-left space-y-6">
-													<h1 class="text-4xl md:text-5xl font-bold text-teal-900">Our Pricing
-													</h1>
-													<hr class="border-t-4 border-teal-800 w-24 mx-auto md:mx-0" />
-													<p class="mt-4 text-gray-700 text-lg leading-relaxed">
-														We’ll help you figure out which of our high-quality cleaning
-														services
-														best suits your budget and cleaning needs. To learn more, please
-														visit our
-														<a href="#"
-															class="text-teal-800 underline font-medium">Services</a>
-														page.
-													</p>
-													<!-- Button Group -->
-													<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
-														<button class="border border-gray-300 px-6 py-2 rounded-md text-lg font-semibold bg-white 
-														 hover:bg-teal-800 hover:text-white transition-colors">
-															Flat Rate
-														</button>
-														<button class="border border-gray-300 px-6 py-2 rounded-md text-lg font-semibold bg-white 
-														 hover:bg-teal-800 hover:text-white transition-colors">
-															Hourly
-														</button>
-														<button class="border border-gray-300 px-6 py-2 rounded-md text-lg font-semibold bg-white 
-														 hover:bg-teal-800 hover:text-white transition-colors">
-															Extras
-														</button>
-														<button class="border border-gray-300 px-6 py-2 rounded-md text-lg font-semibold bg-white 
-														 hover:bg-teal-800 hover:text-white transition-colors">
-															End Of Lease
-														</button>
-													</div>
-												</div>
-												<!-- Right Image Section -->
-												<div class="md:w-1/2 flex justify-center">
-													<img src="https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-														alt="Team Photo"
-														class="rounded-lg shadow-lg w-full md:w-[90%] object-cover" />
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<!-- CTA Banner -->
-									<div class="max-w-screen-xl mx-auto px-6 py-8">
-										<div
-											class="bg-teal-700 rounded-lg text-white p-6 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-											<div class="text-center md:text-left">
-												<h3 class="text-xl font-medium">Book Your Cleaning Today!</h3>
-												<p class="text-sm text-teal-100">Contact us for a free quote and
-													immediate availability.</p>
-											</div>
-											<a href="#"
-												class="inline-block px-8 py-3 bg-white text-teal-700 font-medium rounded-lg shadow-md hover:bg-teal-50 transition duration-300">
-												Get Instant Price
-											</a>
-										</div>
-									</div>
-
-									<!-- Extras Section -->
-									<div class="mx-auto p-6 max-w-screen-xl">
-										<div class="grid md:grid-cols-2 gap-6 items-center">
-											<!-- Images Grid -->
-											<div class="grid grid-cols-2 gap-4">
-												<!-- Large Image -->
-												<img src="https://images.pexels.com/photos/9462143/pexels-photo-9462143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-													alt="Cleaning" class="rounded-lg w-full h-48 object-cover" />
-												<!-- Nested Grid for Two Images -->
-												<div class="grid grid-rows-2 gap-4">
-													<img src="https://images.pexels.com/photos/4440537/pexels-photo-4440537.jpeg?auto=compress&cs=tinysrgb&w=600"
-														alt="Oven Cleaning"
-														class="rounded-lg w-full h-48 object-cover" />
-													<img src="https://images.pexels.com/photos/6195111/pexels-photo-6195111.jpeg?auto=compress&cs=tinysrgb&w=600"
-														alt="Stove Cleaning"
-														class="rounded-lg w-full h-48 object-cover" />
-												</div>
-											</div>
-											<!-- Content Section -->
-											<div>
-												<h2 class="text-3xl font-semibold mb-4 text-teal-900">Add Ons for Flat
-													Rate Cleaning</h2>
-												<p class="text-gray-700 mb-6 leading-relaxed">
-													Sometimes you just need some extra TLC! If you're looking for some
-													additional help around the
-													house, please let us know. Our cleaners can tackle any of the
-													following extras listed below.
-												</p>
-												<div class="bg-white p-6 rounded-lg shadow-md">
-													<h3 class="text-xl font-semibold mb-4 text-teal-800">Flat Rate
-														Cleaning Extras Pricing</h3>
-													<ul class="text-gray-700 space-y-2">
-														<li class="flex justify-between border-b pb-2">
-															<span>Deep clean</span>
-															<span>$200</span>
-														</li>
-														<li class="flex justify-between border-b pb-2">
-															<span>Oven clean</span>
-															<span>$70</span>
-														</li>
-														<li class="flex justify-between border-b pb-2">
-															<span>Clean interior windows</span>
-															<span>$70</span>
-														</li>
-														<li class="flex justify-between border-b pb-2">
-															<span>Clean inside the fridge</span>
-															<span>$50</span>
-														</li>
-														<li class="flex justify-between border-b pb-2">
-															<span>Clean inside cabinets</span>
-															<span>$40</span>
-														</li>
-														<li class="flex justify-between border-b pb-2">
-															<span>Additional room/s</span>
-															<span>$40</span>
-														</li>
-														<li class="flex justify-between">
-															<span>Housekeeping tasks</span>
-															<span>$26</span>
-														</li>
-													</ul>
-												</div>
-												<button
-													class="mt-6 px-6 py-3 bg-teal-800 text-white rounded-lg shadow-md hover:bg-teal-600 transition-colors">
-													Book Now
-												</button>
-											</div>
-										</div>
-									</div>
+									
 									<section class="container mx-auto px-4 md:px-8 py-12 flex flex-col">
 
 										<div class="text-center mb-12">
@@ -460,16 +329,15 @@
 												Pricing</h2>
 										</div>
 
-										<div class="flex md:flex-row flex-col justify-center items-center gap-10">
+										<div class="flex md:flex-row flex-col justify-center items-center gap-10 md:px-24 px-10 pb-20">
 											<!-- House Cleaning Card -->
 											<div id="house-cleaning"
-												class="rounded-xl  md:w-[55rem] md:h-[30rem] overflow-hidden bg-white shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl">
+												class="rounded-xl  md:w-[55rem] md:h-[23rem] overflow-hidden bg-white shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl">
 
 												<div class="p-6 space-y-4">
 
-													<h2 class="text-2xl font-bold text-teal-800">Standard</h2>
-													<p class="text-black text-lg font-semibold">$40 <span
-															class="text-sm">per hour</span></p>
+													<h2 class="text-2xl font-bold text-teal-800">Home Cleaning</h2>
+													<p class="text-black text-lg font-semibold">$120</p>
 													<ul class="mt-4 space-y-2 text-gray-600">
 														<li>&#10003; General dusting and vacuuming</li>
 														<li>&#10003; Bathroom cleaning</li>
@@ -483,11 +351,10 @@
 												</div>
 											</div>
 											<div id="bond-cleaning"
-												class="rounded-xl  md:w-[55rem] md:h-[30rem] overflow-hidden bg-white shadow-lg border-2 border-teal-800 transition-transform hover:-translate-y-1 hover:shadow-xl">
+												class="rounded-xl  md:w-[55rem] md:h-[23rem] overflow-hidden bg-white shadow-lg border-2 border-teal-800 transition-transform hover:-translate-y-1 hover:shadow-xl">
 												<div class="p-6  space-y-4">
-													<h2 class="text-2xl font-bold text-teal-800">Deep Clean</h2>
-													<p class="text-gray-700 text-lg font-semibold">$55 <span
-															class="text-sm">per hour</span></p>
+													<h2 class="text-2xl font-bold text-teal-800">House Cleaning</h2>
+													<p class="text-gray-700 text-lg font-semibold">$150</p>
 													<ul class="mt-4 space-y-2 text-gray-600">
 														<li class="flex items-center"><span
 																class="text-teal-800 mr-2">&#10003;</span> All standard
@@ -509,12 +376,11 @@
 											</div>
 
 											<div id="office-cleaning"
-												class="rounded-xl border-2 border-teal-800 md:w-[55rem] md:h-[30rem] overflow-hidden bg-white shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl">
+												class="rounded-xl border-2 border-teal-800 md:w-[55rem] md:h-[23rem] overflow-hidden bg-white shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl">
 
 												<div class="p-6 space-y-4">
-													<h2 class="text-2xl font-bold text-teal-800">Bond Clean</h2>
-													<p class="text-black text-lg font-semibold">From $350 <span
-															class="text-sm">flat rate</span></p>
+													<h2 class="text-2xl font-bold text-teal-800">Deep Clean</h2>
+													<p class="text-black text-lg font-semibold">$200</p>
 													<ul class="mt-4 space-y-2 text-gray-600">
 														<li>&#10003; Full property deep clean</li>
 														<li>&#10003; Oven and rangehood</li>
@@ -526,159 +392,9 @@
 														Now</button>
 												</div>
 											</div>
-
-
-
-
 										</div>
 									</section>
 
-									<!-- Hourly Section -->
-									<div class="max-w-6xl bg-teal-800 rounded-lg mx-auto px-6 py-12">
-										<div class="grid md:grid-cols-2 gap-8 items-center">
-											<!-- Content Block -->
-											<div class="p-6 space-y-4">
-												<h2 class="text-3xl font-bold text-white">House Cleaning</h2>
-												<p class="text-white leading-relaxed">
-													We clean your house according to your needs and preferences. Our
-													permanent employee cleaners
-													get every nook, cranny, and corner.
-												</p>
-												<ul class="space-y-2">
-													<li class="flex items-start">
-														<svg class="h-5 w-5 text-white mr-2 mt-0.5" fill="currentColor"
-															viewBox="0 0 20 20">
-															<path fill-rule="evenodd"
-																d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-																clip-rule="evenodd"></path>
-														</svg>
-														<span class="text-white">Flat rate or hourly pricing
-															options</span>
-													</li>
-													<li class="flex items-start">
-														<svg class="h-5 w-5 text-white mr-2 mt-0.5" fill="currentColor"
-															viewBox="0 0 20 20">
-															<path fill-rule="evenodd"
-																d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-																clip-rule="evenodd"></path>
-														</svg>
-														<span class="text-white">Kitchen, bathrooms, bedrooms, living
-															spaces</span>
-													</li>
-													<li class="flex items-start">
-														<svg class="h-5 w-5 text-white mr-2 mt-0.5" fill="currentColor"
-															viewBox="0 0 20 20">
-															<path fill-rule="evenodd"
-																d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-																clip-rule="evenodd"></path>
-														</svg>
-														<span class="text-white">Add-ons available such as deep
-															cleaning, oven cleaning, and more</span>
-													</li>
-												</ul>
-											</div>
-											<!-- Image -->
-											<div>
-												<img src="https://images.pexels.com/photos/4108712/pexels-photo-4108712.jpeg?auto=compress&cs=tinysrgb&w=600"
-													alt="Bathroom Image" class="rounded-lg shadow-lg w-full" />
-											</div>
-										</div>
-
-										<!-- Hourly Price List -->
-										<div class="mt-12">
-											<h3 class="text-xl text-white font-semibold text-center mb-6">Hourly Rate
-												Cleaning Price List</h3>
-											<div
-												class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-												<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
-													<p class="text-2xl font-bold">$63</p>
-													<p class="text-sm font-semibold mt-2">WEEKLY</p>
-												</div>
-												<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
-													<p class="text-2xl font-bold">$63</p>
-													<p class="text-sm font-semibold mt-2">FORTNIGHTLY</p>
-												</div>
-												<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
-													<p class="text-2xl font-bold">$66.50</p>
-													<p class="text-sm font-semibold mt-2">MONTHLY</p>
-												</div>
-												<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
-													<p class="text-2xl font-bold">$70</p>
-													<p class="text-sm font-semibold mt-2">ONE-TIME</p>
-												</div>
-											</div>
-										</div>
-
-										<!-- Book Now Button -->
-										<div class="flex justify-center mt-8">
-											<a href="#"
-												class="inline-block px-8 py-3 bg-white text-teal-700 font-medium rounded-lg shadow-md hover:bg-teal-50 transition duration-300">
-												Book Now
-											</a>
-										</div>
-									</div>
-
-									<!-- FAQ Section -->
-									<div class="max-w-6xl mx-auto p-6">
-										<h2 class="text-3xl font-semibold text-center mb-6 text-teal-900">More
-											Information On Our Pricing</h2>
-										<div class="grid md:grid-cols-2 gap-4">
-											<div class="bg-white p-4 rounded-lg shadow-md">
-												<button
-													class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
-													onclick="toggleFAQ(1)">
-													What’s included in the cost of my cleaning service?
-													<span class="text-teal-800">+</span>
-												</button>
-												<p id="faq1"
-													class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">
-													Our cleaning service includes dusting, vacuuming, mopping, and
-													kitchen and bathroom cleaning.
-												</p>
-											</div>
-											<div class="bg-white p-4 rounded-lg shadow-md">
-												<button
-													class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
-													onclick="toggleFAQ(2)">
-													How many hours should I book for my cleaning service?
-													<span class="text-teal-800">+</span>
-												</button>
-												<p id="faq2"
-													class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">
-													The duration depends on the size of your home and the level of
-													cleaning required.
-												</p>
-											</div>
-											<div class="bg-white p-4 rounded-lg shadow-md">
-												<button
-													class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
-													onclick="toggleFAQ(3)">
-													Should I choose a flat rate or hourly service?
-													<span class="text-teal-800">+</span>
-												</button>
-												<p id="faq3"
-													class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">
-													Flat rate is best for complete cleaning, while hourly service is
-													better for specific tasks.
-												</p>
-											</div>
-											<div class="bg-white p-4 rounded-lg shadow-md">
-												<button
-													class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
-													onclick="toggleFAQ(4)">
-													Why is the bond cleaning hourly rate more than house cleaning?
-													<span class="text-teal-800">+</span>
-												</button>
-												<p id="faq4"
-													class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">
-													Bond cleaning requires deeper cleaning and more effort than standard
-													house cleaning.
-												</p>
-											</div>
-										</div>
-									</div>
-
-									<!-- Script for FAQ toggling -->
 									<script>
 										function toggleFAQ(id) {
 											const answer = document.getElementById(`faq${id}`);
@@ -686,55 +402,36 @@
 										}
 									</script>
 
-									<!-- Footer Section -->
 									<footer class="bg-[#1b3d32] text-white pt-16 pb-8">
 										<div class="max-w-7xl mx-auto px-4">
 											<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
 												<div>
-													<img src="images/logo.png" alt="illawarra Logo"
-														class="h-40 w-auto transition-all duration-300" id="mainLogo">
-													<p class="text-gray-400 mb-4">Your trusted cleaning partner in
-														Australia since 2010. Delivering spotless results and
-														exceptional service.</p>
+													<img src="images/footer-logo.png" alt="illawarra Logo"
+													  class="w-40 pb-6 transition-all duration-300" id="mainLogo">
+													<p class="text-gray-400 mb-4">Your trusted cleaning partner in Australia since 2010. Delivering spotless results and exceptional service.</p>
 													<p class="text-gray-400">ABN: 12 345 678 901</p>
 												</div>
-
+								
 												<div>
 													<h4 class="text-lg font-semibold mb-6 text-white">Quick Links</h4>
 													<ul class="space-y-3">
-														<li><a href="#"
-																class="text-gray-400 hover:text-white transition">Home</a>
-														</li>
-														<li><a href="#"
-																class="text-gray-400 hover:text-white transition">Services</a>
-														</li>
-														<li><a href="#"
-																class="text-gray-400 hover:text-white transition">About
-																Us</a></li>
-														<li><a href="#"
-																class="text-gray-400 hover:text-white transition">Book
-																Now</a></li>
+														<li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+														<li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+														<li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+														<li><a href="#" class="text-gray-400 hover:text-white transition">Book Now</a></li>
 													</ul>
 												</div>
-
+								
 												<div>
 													<h4 class="text-lg font-semibold mb-6 text-white">Our Services</h4>
 													<ul class="space-y-3">
-														<li><a href="#"
-																class="text-gray-400 hover:text-white transition">House
-																Cleaning</a></li>
-														<li><a href="#"
-																class="text-gray-400 hover:text-white transition">Office
-																Cleaning</a></li>
-														<li><a href="#"
-																class="text-gray-400 hover:text-white transition">End of
-																Lease Cleaning</a></li>
-														<li><a href="#"
-																class="text-gray-400 hover:text-white transition">Commercial
-																Cleaning</a></li>
+														<li><a href="#" class="text-gray-400 hover:text-white transition">House Cleaning</a></li>
+														<li><a href="#" class="text-gray-400 hover:text-white transition">Office Cleaning</a></li>
+														<li><a href="#" class="text-gray-400 hover:text-white transition">End of Lease Cleaning</a></li>
+														<li><a href="#" class="text-gray-400 hover:text-white transition">Commercial Cleaning</a></li>
 													</ul>
 												</div>
-
+								
 												<div>
 													<h4 class="text-lg font-semibold mb-6 text-white">Contact Info</h4>
 													<ul class="space-y-3">
@@ -742,8 +439,7 @@
 															<div class="w-5 h-5 flex items-center justify-center mt-1">
 																<i class="ri-map-pin-line text-primary"></i>
 															</div>
-															<span class="text-gray-400">Level 1, 1 Burelli Street,
-																Wollongong, NSW 2500 Wollongong NSW 2500</span>
+															<span class="text-gray-400">Level 1, 1 Burelli Street, Wollongong, NSW 2500 Wollongong NSW 2500</span>
 														</li>
 														<li class="flex items-center gap-3">
 															<div class="w-5 h-5 flex items-center justify-center">
@@ -761,47 +457,33 @@
 															<div class="w-5 h-5 flex items-center justify-center">
 																<i class="ri-time-line text-primary"></i>
 															</div>
-															<span class="text-gray-400">Mon-Sat: 7:00 AM - 8:00
-																PM</span>
+															<span class="text-gray-400">Mon-Sat: 7:00 AM - 8:00 PM</span>
 														</li>
 													</ul>
 												</div>
 											</div>
-
-											<div class="border-t border-gray-800 pt-8">
-												<div
-													class="flex flex-col md:flex-row justify-between items-center gap-6">
+								
+											<div class="border-t border-gray-800 pt-1">
+												<div class="flex flex-col md:flex-row justify-between items-center gap-6">
 													<div class="flex gap-4">
-														<a href="#"
-															class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+														<a href="#" class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
 															<i class="ri-facebook-fill text-xl"></i>
 														</a>
-														<a href="#"
-															class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+														<a href="#" class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
 															<i class="ri-instagram-line text-xl"></i>
 														</a>
-														<a href="#"
-															class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+														<a href="#" class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
 															<i class="ri-linkedin-fill text-xl"></i>
 														</a>
 													</div>
 												</div>
-
+								
 												<div class="text-center mt-8 text-gray-500">
-													<p>&copy; <span id="copyright-year"></span> Illawarra Crew
-														Australia. All rights reserved.</p>
+													<p>&copy; <span id="copyright-year"></span> Illawarra Crew Australia. All rights reserved.</p>
 												</div>
 											</div>
 										</div>
 									</footer>
-
-									<script>
-										document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
-									</script>
-								</div>
-							</div>
-						</div>
-						</footer>
 
 
 				</div>
