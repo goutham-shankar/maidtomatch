@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>About Us - Illawarra Cleaning Crew</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-gradient-to-b from-teal-900 to-teal-700 text-white min-h-screen">
+    <!-- Hero Section with Parallax Effect -->
+    <div class="relative h-80 md:h-96 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); transform: translateY(-20px) scale(1.1);"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">About Us</h1>
+                <div class="h-1 w-24 bg-teal-400 mx-auto"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content with Cards -->
+    <section class="max-w-6xl mx-auto p-6 md:p-12 -mt-10 relative z-10">
+        <!-- Mission Statement Card -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-8 mb-10 transform hover:scale-[1.01] transition-transform duration-300">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/4 mb-6 md:mb-0">
+                    <div class="w-24 h-24 rounded-full bg-teal-500 flex items-center justify-center mx-auto">
+                        <i class="fas fa-bullseye text-4xl"></i>
+                    </div>
+                </div>
+                <div class="md:w-3/4 md:pl-8">
+                    <h2 class="text-3xl font-bold text-teal-300 mb-4">Our Mission</h2>
+                    <p class="text-lg leading-relaxed text-gray-100">
+                        At Illawarra Crew, our mission is to provide top-quality commercial cleaning services to our clients. We strive to exceed expectations and deliver outstanding results every time. Our commitment to excellence ensures a clean, hygienic, and welcoming environment for all businesses.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Team Section -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-8 mb-10 transform hover:scale-[1.01] transition-transform duration-300">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/4 mb-6 md:mb-0">
+                    <div class="w-24 h-24 rounded-full bg-teal-500 flex items-center justify-center mx-auto">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                </div>
+                <div class="md:w-3/4 md:pr-8">
+                    <h2 class="text-3xl font-bold text-teal-300 mb-4">Our Team</h2>
+                    <p class="text-lg leading-relaxed text-gray-100">
+                        Our team is made up of experienced and highly skilled cleaning professionals who are dedicated to providing exceptional service. We are committed to delivering the highest level of customer satisfaction. Each member of our crew undergoes rigorous training and background checks to ensure reliability, efficiency, and trustworthiness.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Services Section -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-8 mb-10 transform hover:scale-[1.01] transition-transform duration-300">
+            <h2 class="text-3xl font-bold text-teal-300 mb-6 text-center">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-4 bg-teal-800/50 rounded-xl">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-400 flex items-center justify-center mr-3">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl">Office Cleaning</h3>
+                    </div>
+                    <p>Daily, weekly, or customized schedules to suit your business needs.</p>
+                </div>
+                
+                <div class="p-4 bg-teal-800/50 rounded-xl">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-400 flex items-center justify-center mr-3">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl">Carpet Cleaning</h3>
+                    </div>
+                    <p>Deep cleaning to remove stains, allergens, and maintain a fresh look.</p>
+                </div>
+                
+                <div class="p-4 bg-teal-800/50 rounded-xl">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-400 flex items-center justify-center mr-3">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl">Floor Maintenance</h3>
+                    </div>
+                    <p>Polishing, waxing, and buffing to keep floors in pristine condition.</p>
+                </div>
+                
+                <div class="p-4 bg-teal-800/50 rounded-xl">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-400 flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl">Sanitization</h3>
+                    </div>
+                    <p>Ensuring a germ-free environment with advanced disinfection techniques.</p>
+                </div>
+                
+                <div class="p-4 bg-teal-800/50 rounded-xl">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-400 flex items-center justify-center mr-3">
+                            <i class="fas fa-window-maximize"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl">Window Cleaning</h3>
+                    </div>
+                    <p>Spotless windows for a professional and welcoming appearance.</p>
+                </div>
+                
+                <div class="p-4 bg-teal-800/50 rounded-xl">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-400 flex items-center justify-center mr-3">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="font-semibold text-xl">Eco-Friendly</h3>
+                    </div>
+                    <p>Using sustainable products for a healthier workspace and planet.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Why Choose Us Section -->
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-8 mb-10">
+            <h2 class="text-3xl font-bold text-teal-300 mb-6 text-center">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="text-center p-4 hover:bg-teal-800/30 rounded-lg transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-teal-400 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+                    <p>Always available to address your cleaning needs</p>
+                </div>
+                
+                <div class="text-center p-4 hover:bg-teal-800/30 rounded-lg transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-teal-400 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Flexible Scheduling</h3>
+                    <p>Cleaning services that adapt to your business hours</p>
+                </div>
+                
+                <div class="text-center p-4 hover:bg-teal-800/30 rounded-lg transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-teal-400 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Certified Staff</h3>
+                    <p>Professionally trained cleaning specialists</p>
+                </div>
+                
+                <div class="text-center p-4 hover:bg-teal-800/30 rounded-lg transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-teal-400 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-recycle text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Eco-Friendly</h3>
+                    <p>Sustainable cleaning products and methods</p>
+                </div>
+                
+                <div class="text-center p-4 hover:bg-teal-800/30 rounded-lg transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-teal-400 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Competitive Pricing</h3>
+                    <p>Great value without compromising quality</p>
+                </div>
+                
+                <div class="text-center p-4 hover:bg-teal-800/30 rounded-lg transition-all duration-300">
+                    <div class="w-16 h-16 rounded-full bg-teal-400 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-thumbs-up text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Satisfaction Guarantee</h3>
+                    <p>We're not happy until you're happy</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Call to Action -->
+        <div class="text-center py-8">
+            <h2 class="text-3xl font-bold mb-4">Ready to experience our superior cleaning service?</h2>
+            <button class="bg-teal-400 hover:bg-teal-500 text-teal-900 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-lg">
+                Get a Free Quote Today
+            </button>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-teal-900 py-6 text-center mt-10">
+        <p class="text-teal-300">&copy; 2025 Illawarra Cleaning Crew. All rights reserved.</p>
+    </footer>
+
+    <!-- Fix for FontAwesome -->
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Replace FontAwesome placeholder with actual icons
+            const iconMap = {
+                'fa-bullseye': '🎯',
+                'fa-users': '👥',
+                'fa-building': '🏢',
+                'fa-broom': '🧹',
+                'fa-expand': '🔄',
+                'fa-shield-alt': '🛡️',
+                'fa-window-maximize': '🪟',
+                'fa-leaf': '🌿',
+                'fa-headset': '🎧',
+                'fa-calendar-alt': '📅',
+                'fa-certificate': '🏅',
+                'fa-recycle': '♻️',
+                'fa-dollar-sign': '💲',
+                'fa-thumbs-up': '👍'
+            };
+            
+            document.querySelectorAll('.fas').forEach(el => {
+                for (const [faClass, emoji] of Object.entries(iconMap)) {
+                    if (el.classList.contains(faClass)) {
+                        el.textContent = emoji;
+                        break;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Illawarra Crew</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/af96bacba3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="icon" href="https://img1.wsimg.com/isteam/ip/74537aa5-897b-4082-ae11-bc94c96d7a1d/favicon/83e23802-7080-43f5-8e94-dbcba944660b/5034766c-edcc-4bbc-a66a-3fb977715bc8.png/:/rs=w:24,h:24,m" sizes="32x32">
+</head>
+
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-transparent fixed w-full text-black shadow-md top-0 z-50 h-24 transition-all duration-300" id="mainHeader">
+        <div class="flex justify-between items-center py-1 px-6 h-full">
+            <div class="flex items-center">
+                <a href="/">
+                    <img src="images/logo.png" alt="Illawarra Logo" class="h-40 w-auto transition-all duration-300" id="mainLogo">
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <div class="relative group">
+                    <a href="#" class="text-black font-semibold hover:text-white transition-colors duration-300">Services</a>
+                </div>
+                <a href="/maidtomatch/pricing" class="text-black font-semibold hover:text-white transition-colors duration-300">Pricing</a>
+                <a href="/cop.html" class="text-black font-semibold hover:text-white transition-colors duration-300">Reviews</a>
+                <a href="/maidtomatch/about" class="text-black font-semibold hover:text-white transition-colors duration-300">About</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="tel:1800207686" class="bg-teal-800 text-white px-4 py-2 rounded-lg hover:bg-teal-900">
+                    Call Us: 1800 207 686
+                </a>
+            </div>
+
+            <button class="md:hidden text-black focus:outline-none" id="mobile-menu-button">
+                ☰
+            </button>
+        </div>
+        <div class="hidden md:hidden bg-white border-t p-4" id="mobile-menu">
+            <a href="/services.html" class="block py-2 text-black">Services</a>
+            <a href="/pricing.html" class="block py-2 text-black">Pricing</a>
+            <a href="/reviews.html" class="block py-2 text-black">Reviews</a>
+            <a href="/about.html" class="block py-2 text-black">About</a>
+            <a href="tel:1800207686" class="block bg-teal-800 text-white px-4 py-2 rounded-lg mt-2 text-center">Call Us: 1800 207 686</a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Overlay Text -->
+    <section class="relative pt-32 pb-20 bg-cover bg-center h-[500px]" style="background-image: url('./images/about-hero.jpg');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto px-6 relative z-10 h-full flex flex-col justify-center">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">About Illawarra Crew</h1>
+                <p class="text-xl text-white opacity-90">Excellence in cleaning services since 2010. Learn about our journey, our values, and the people who make it all possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="./images/about-team.jpg" alt="Illawarra Crew Team" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <span class="text-teal-800 font-semibold tracking-wider uppercase">Our Story</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">From a Small Team to the Cleaning Leader in Illawarra</h2>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Founded in 2010, Illawarra Crew began with a simple mission: to provide exceptional cleaning services that would make a genuine difference in people's lives. What started as a small team of dedicated professionals has grown into the Illawarra region's most trusted cleaning company.
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Our journey has been built on the foundation of quality, reliability, and attention to detail. With each home and office we clean, we bring our passion for creating spotless environments where our clients can thrive.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Today, we're proud to serve hundreds of residential and commercial clients throughout the region, maintaining our commitment to personalized service and exceptional results with every job we complete.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-teal-800 font-semibold tracking-wider uppercase">What We Stand For</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Our Core Values</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    At Illawarra Crew, these principles guide everything we do, from how we train our team to how we interact with our clients.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fa-solid fa-medal text-2xl text-teal-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-900 mb-4">Excellence</h3>
+                    <p class="text-gray-700 text-center">
+                        We strive for excellence in every aspect of our service, ensuring attention to detail and the highest standards of cleanliness in every job we undertake.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fa-solid fa-handshake text-2xl text-teal-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-900 mb-4">Integrity</h3>
+                    <p class="text-gray-700 text-center">
+                        We operate with honesty, transparency, and respect in all our interactions with clients, staff, and partners, building long-lasting relationships based on trust.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                    <div class="bg-teal-100 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fa-solid fa-leaf text-2xl text-teal-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-900 mb-4">Sustainability</h3>
+                    <p class="text-gray-700 text-center">
+                        We're committed to environmentally responsible practices, using eco-friendly products and methods that protect both your health and our planet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-teal-800 font-semibold tracking-wider uppercase">Our People</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Meet the Leadership Team</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    The passionate individuals who lead our company and ensure we deliver on our promise of excellence every day.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="./images/team-1.jpg" alt="Emma Johnson" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-bold text-center text-gray-900">Emma Johnson</h3>
+                    <p class="text-teal-800 text-center font-medium mb-4">Founder & CEO</p>
+                    <p class="text-gray-700 text-center">
+                        With over 15 years in the cleaning industry, Emma founded Illawarra Crew with a vision to redefine cleaning standards in the region.
+                    </p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="./images/team-2.jpg" alt="David Chen" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-bold text-center text-gray-900">David Chen</h3>
+                    <p class="text-teal-800 text-center font-medium mb-4">Operations Manager</p>
+                    <p class="text-gray-700 text-center">
+                        David ensures our operations run smoothly while maintaining our high standards of quality and customer satisfaction.
+                    </p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="./images/team-3.jpg" alt="Sarah Miller" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-bold text-center text-gray-900">Sarah Miller</h3>
+                    <p class="text-teal-800 text-center font-medium mb-4">Training Coordinator</p>
+                    <p class="text-gray-700 text-center">
+                        Sarah leads our training program, ensuring every team member has the skills to deliver exceptional cleaning services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach Section -->
+    <section class="py-16 bg-gradient-to-r from-teal-800 to-teal-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Cleaning Approach</h2>
+                <p class="text-lg opacity-90">
+                    We believe that great cleaning is about more than just appearances—it's about creating healthier, more comfortable spaces for our clients.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="flex flex-col items-start">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-check-double text-2xl text-teal-800"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Thorough & Methodical</h3>
+                    <p class="opacity-90 leading-relaxed">
+                        Our cleaning process follows a systematic approach to ensure no area is missed. We work from top to bottom, using proven techniques for efficient and thorough cleaning.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-shield-heart text-2xl text-teal-800"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Health-Focused</h3>
+                    <p class="opacity-90 leading-relaxed">
+                        We prioritize your health by using products that effectively sanitize surfaces while being safe for you, your family, and pets. Our focus extends beyond visible cleanliness to eliminating germs and allergens.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-user-gear text-2xl text-teal-800"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Personalized Service</h3>
+                    <p class="opacity-90 leading-relaxed">
+                        We understand that each client has unique needs and preferences. Our services are tailored to address your specific requirements, focusing on the areas that matter most to you.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-start">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-leaf-heart text-2xl text-teal-800"></i></div></div></div></div></section></body></html>    

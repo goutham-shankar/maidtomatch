@@ -18,7 +18,7 @@
 
 	<script id="diviarea-loader">window.DiviPopupData = window.DiviAreaConfig = { "zIndex": 1000000, "animateSpeed": 400, "triggerClassPrefix": "show-popup-", "idAttrib": "data-popup", "modalIndicatorClass": "is-modal", "blockingIndicatorClass": "is-blocking", "defaultShowCloseButton": true, "withCloseClass": "with-close", "noCloseClass": "no-close", "triggerCloseClass": "close", "singletonClass": "single", "darkModeClass": "dark", "noShadowClass": "no-shadow", "altCloseClass": "close-alt", "popupSelector": ".et_pb_section.popup", "initializeOnEvent": "et_pb_after_init_modules", "popupWrapperClass": "area-outer-wrap", "fullHeightClass": "full-height", "openPopupClass": "da-overlay-visible", "overlayClass": "da-overlay", "exitIndicatorClass": "on-exit", "hoverTriggerClass": "on-hover", "clickTriggerClass": "on-click", "onExitDelay": 2000, "notMobileClass": "not-mobile", "notTabletClass": "not-tablet", "notDesktopClass": "not-desktop", "baseContext": "body", "activePopupClass": "is-open", "closeButtonClass": "da-close", "withLoaderClass": "with-loader", "debug": false, "ajaxUrl": "https:\/\/www.maid2match.com.au\/wp-admin\/admin-ajax.php", "sys": [] }; var divimode_loader = function () { "use strict"; !function (t) { t.DiviArea = t.DiviPopup = { loaded: !1 }; var n = t.DiviArea, i = n.Hooks = {}, o = {}; function r(t, n, i) { var r, e, c; if ("string" == typeof t) if (o[t]) { if (n) if ((r = o[t]) && i) for (c = r.length; c--;)(e = r[c]).callback === n && e.context === i && (r[c] = !1); else for (c = r.length; c--;)r[c].callback === n && (r[c] = !1) } else o[t] = [] } function e(t, n, i, r) { if ("string" == typeof t) { var e = { callback: n, priority: i, context: r }, c = o[t]; c ? (c.push(e), c = function (t) { var n, i, o, r, e = t.length; for (r = 1; r < e; r++)for (n = t[r], i = r; i > 0; i--)(o = t[i - 1]).priority > n.priority && (t[i] = o, t[i - 1] = n); return t }(c)) : c = [e], o[t] = c } } function c(t, n, i) { "string" == typeof n && (n = [n]); var r, e, c = []; for (r = 0; r < n.length; r++)Array.prototype.push.apply(c, o[n[r]]); for (e = 0; e < c.length; e++) { var a = void 0; c[e] && "function" == typeof c[e].callback && ("filter" === t ? void 0 !== (a = c[e].callback.apply(c[e].context, i)) && (i[0] = a) : c[e].callback.apply(c[e].context, i)) } if ("filter" === t) return i[0] } i.silent = function () { return i }, n.removeFilter = i.removeFilter = function (t, n) { r(t, n) }, n.removeAction = i.removeAction = function (t, n) { r(t, n) }, n.applyFilters = i.applyFilters = function (t) { for (var n = [], i = arguments.length - 1; i-- > 0;)n[i] = arguments[i + 1]; return c("filter", t, n) }, n.doAction = i.doAction = function (t) { for (var n = [], i = arguments.length - 1; i-- > 0;)n[i] = arguments[i + 1]; c("action", t, n) }, n.addFilter = i.addFilter = function (n, i, o, r) { e(n, i, parseInt(o || 10, 10), r || t) }, n.addAction = i.addAction = function (n, i, o, r) { e(n, i, parseInt(o || 10, 10), r || t) }, n.addActionOnce = i.addActionOnce = function (n, i, o, c) { e(n, i, parseInt(o || 10, 10), c || t), e(n, (function () { r(n, i) }), 1 + parseInt(o || 10, 10), c || t) } }(window); return {} }();
 	</script>
-	
+
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 	<!-- This site is optimized with the Yoast SEO plugin v24.6 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -52,6 +52,7 @@
 	<!-- / Yoast SEO plugin. -->
 
 
+
 	<link rel="dns-prefetch" href="//static.addtoany.com">
 
 	<link href="https://www.facebook.com" rel="preconnect">
@@ -62,7 +63,7 @@
 	<link rel="alternate" type="application/rss+xml" title="Maid2Match � Comments Feed"
 		href="https://www.maid2match.com.au/comments/feed/">
 	<meta content="Divi Child v.1.0.0" name="generator">
-	
+	<script src="https://kit.fontawesome.com/af96bacba3.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" defer="" src="js/page.js" id="addtoany-core-js"></script>
 	<script type="text/javascript" src="js/jquery.min_1.js" id="jquery-core-js"></script>
 	<script type="text/javascript" src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
@@ -70,6 +71,7 @@
 	<script type="text/javascript" src="js/ie-compat.min.js" id="dap-ie-js" data-rocket-defer="" defer=""></script>
 	<link rel="https://api.w.org/" href="https://www.maid2match.com.au/wp-json/">
 	<link rel="alternate" title="JSON" type="application/json"
+	
 		href="https://www.maid2match.com.au/wp-json/wp/v2/pages/38325">
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.maid2match.com.au/xmlrpc.php?rsd">
 	<meta name="generator" content="WordPress 6.7.2">
@@ -78,6 +80,7 @@
 		href="https://www.maid2match.com.au/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.maid2match.com.au%2F">
 	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
 		href="https://www.maid2match.com.au/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.maid2match.com.au%2F&format=xml">
+	<script src="https://kit.fontawesome.com/af96bacba3.js" crossorigin="anonymous"></script>
 	<script type="text/javascript">function booyah(domain, path) {
 			var params = 'domain=' + domain + '&path=' + path;
 			var xhr = new XMLHttpRequest();
@@ -255,432 +258,556 @@
 
 <body data-rsssl="1"
 	class="home page-template-default page page-id-38325 et-tb-has-template et-tb-has-header et-tb-has-footer et_button_no_icon et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
-	<div >
-		<div >
+	<div>
+		<div>
 
 			<header class="bg-white text-black shadow-md sticky top-0 z-50">
 				<div class="container mx-auto flex justify-between items-center py-4 px-6  ">
 					<div class="flex items-center">
 						<a href="/">
-							<img src="images/elvllog.png" alt="Maid2Match Logo" class="h-16 w-auto">
+							<img src="images/logo-black.png" alt="Illavara " class="h-16 w-auto">
 						</a>
 					</div>
-					<nav class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300 space-x-6">
+					<nav class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300 space-x-6"
+						id="mainMenu">
 						<div class="relative group">
-							<a href="#" class="text-black hover:text-teal-800">Services</a>
-							
+							<a href="#"
+								class="text-black font-semibold hover:text-white transition-colors duration-300">Services</a>
+
 						</div>
-						<a href="/maidtomatch/pricing" class="text-black hover:text-teal-800">Pricing</a>
-						<a href="/" class="text-black hover:text-teal-800">Reviews</a>
-						<a href="/" class="text-black hover:text-teal-800">About</a>
+						<a href="/maidtomatch/pricing"
+							class="text-black font-semibold hover:text-white transition-colors duration-300">Pricing</a>
+						<a href="/cop.html"
+							class="text-black font-semibold hover:text-white transition-colors duration-300">Reviews</a>
+						<a href="/maidtomatch/about"
+							class="text-black font-semibold hover:text-white transition-colors duration-300">About</a>
 					</nav>
 					<div class="flex md:flex absolute md:static -left-full md:left-0 transition-all duration-300">
 						<a href="tel:1800207686" class="bg-teal-800 text-white px-4 py-2 rounded-lg hover:bg-teal-900">
 							Call Us: 1800 207 686
 						</a>
 					</div>
-					
+
 					<button class="md:hidden text-black focus:outline-none" id="mobile-menu-button">
 						☰
 					</button>
 				</div>
 				<div class="hidden md:hidden bg-white border-t p-4" id="mobile-menu">
-					<a href="#" class="block py-2 text-black">Services</a>
+
+					<a href="/services.html" class="block py-2 text-black">Services</a>
 					<a href="/pricing.html" class="block py-2 text-black">Pricing</a>
-					<a href="/" class="block py-2 text-black">Reviews</a>
-					<a href="/" class="block py-2 text-black">About</a>
-					
-					<a href="tel:1800207686" class="block bg-teal-800 text-white px-4 py-2 rounded-lg mt-2 text-center">Call Us: 1800 207 686</a>
+					<a href="/reviews.html" class="block py-2 text-black">Reviews</a>
+					<a href="/about.html" class="block py-2 text-black">About</a>
+
+
+					<a href="tel:1800207686"
+						class="block bg-teal-800 text-white px-4 py-2 rounded-lg mt-2 text-center">Call Us: 1800 207
+						686</a>
 				</div>
 			</header>
 			<script>
-				document.getElementById("mobile-menu-button").addEventListener("click", function() {
+				document.getElementById("mobile-menu-button").addEventListener("click", function () {
 					document.getElementById("mobile-menu").classList.toggle("hidden");
 				});
 			</script>
-		 <!-- heaader  -->
+			<!-- heaader  -->
 			<div id="et-main-area">
-
 				<div id="main-content">
-
-
-
 					<article id="post-38325" class="post-38325 page type-page status-publish has-post-thumbnail hentry">
-
 
 						<div class="entry-content">
 							<div class="et-l et-l--post">
 								<div class="et_builder_inner_content et_pb_gutters3">
-									<div class="et_pb_section et_pb_section_0 et_section_specialty">
-
-
-										
-
-
-
-										
-									</div>
-	
-									<div id="et-main-area">
-										<div class="container mx-auto px-6 py-12">
-											<div class="flex flex-col md:flex-row items-center">
-												<div class="md:w-1/2 text-center md:text-left">
-													<style>
-                                                        @keyframes slideIn {
-                                                          from {
-                                                            width: 0;
-                                                          }
-                                                          to {
-                                                            width:20%;
-                                                          }
-                                                        }
-                                                        .animate-slide {
-                                                          animation: slideIn 0.8s ease-out forwards;
-                                                        }
-                                                        </style>
-                                                        
-                                                        <h1 class="text-3xl md:text-5xl font-bold text-gray-900">Our Pricing</h1>
-                                                        <div class="w-full">
-                                                          <hr class="mt-2 border-t-4 border-teal-800 animate-slide max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
-                                                        </div>
-													<p class="mt-4 text-gray-600 text-lg">
-														We’ll help you figure out which of our high-quality cleaning services best suits your
-														budget and cleaning needs. To learn more about our services in detail, please visit our
-														<a href="#" class="text-teal-800 underline">Services page</a>.
-													</p>
-													<div class="mt-6 grid grid-cols-2 gap-4">
-														<button
-															class="border border-gray-400 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-teal-800 hover:text-white">Flat
-															Rate</button>
-														<button
-															class="border border-gray-400 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-teal-800 hover:text-white  ">Hourly</button>
-														<button
-															class="border border-gray-400 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-teal-800 hover:text-white">Extras</button>
-														<button
-															class="border border-gray-400 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-teal-800 hover:text-white">End
-															Of Lease</button>
-													</div>
-												</div>
-												<div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
-													<img src="https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-														alt="Team Photo" class="rounded-lg shadow-lg w-full md:w-[90%] object-cover">
-												</div>
-											</div>
-										</div>
-						
-										<div class="max-w-screen-xl mx-auto p-4">
-											<!-- Container with a teal background, responsive layout -->
-											<div
-												class="bg-teal-800 rounded-lg text-white p-6 flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-evenly">
-												<!-- Column 1: Title -->
-												<div class="text-center md:text-left">
-													<div class="text-xl font-semibold">Book Your Cleaning Today!</div>
-												</div>
-						
-						
-						
-						
-												<!-- Column 3: Call Links -->
-												<div class="flex items-center space-x-4">
-													<!-- Icon -->
-						
-													<!-- Heading -->
-													<div>
+									<!-- Hero / Pricing Section -->
+									<div class="py-12 bg-gradient-to-r from-teal-50 via-white to-white">
+										<div class="max-w-screen-xl mx-auto px-6">
+											<div class="flex flex-col md:flex-row items-center gap-8">
+												<!-- Left Text Section -->
+												<div class="md:w-1/2 text-center md:text-left space-y-6">
+													<h1 class="text-4xl md:text-5xl font-bold text-teal-900">Our Pricing
+													</h1>
+													<hr class="border-t-4 border-teal-800 w-24 mx-auto md:mx-0" />
+													<p class="mt-4 text-gray-700 text-lg leading-relaxed">
+														We’ll help you figure out which of our high-quality cleaning
+														services
+														best suits your budget and cleaning needs. To learn more, please
+														visit our
 														<a href="#"
-															class="inline-block px-8 py-3 bg-white text-teal-700 font-medium rounded-lg shadow-lg hover:bg-teal-50 transition duration-300">
-															Get Instant Price </a>
+															class="text-teal-800 underline font-medium">Services</a>
+														page.
+													</p>
+													<!-- Button Group -->
+													<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+														<button class="border border-gray-300 px-6 py-2 rounded-md text-lg font-semibold bg-white 
+														 hover:bg-teal-800 hover:text-white transition-colors">
+															Flat Rate
+														</button>
+														<button class="border border-gray-300 px-6 py-2 rounded-md text-lg font-semibold bg-white 
+														 hover:bg-teal-800 hover:text-white transition-colors">
+															Hourly
+														</button>
+														<button class="border border-gray-300 px-6 py-2 rounded-md text-lg font-semibold bg-white 
+														 hover:bg-teal-800 hover:text-white transition-colors">
+															Extras
+														</button>
+														<button class="border border-gray-300 px-6 py-2 rounded-md text-lg font-semibold bg-white 
+														 hover:bg-teal-800 hover:text-white transition-colors">
+															End Of Lease
+														</button>
 													</div>
+												</div>
+												<!-- Right Image Section -->
+												<div class="md:w-1/2 flex justify-center">
+													<img src="https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+														alt="Team Photo"
+														class="rounded-lg shadow-lg w-full md:w-[90%] object-cover" />
 												</div>
 											</div>
 										</div>
-						
-										<div class=" mx-auto p-6">
-											<div class="grid md:grid-cols-2 gap-6 items-center">
-												<!-- Images Section -->
-												<div class="container mx-auto">
-													<div class="grid grid-cols-2 gap-4">
-														<!-- First (larger) image with reduced height -->
-														<img src="https://images.pexels.com/photos/9462143/pexels-photo-9462143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-															alt="Cleaning" class="rounded-lg w-full h-48 object-cover" />
-						
-														<!-- Two images in a nested grid, also with reduced height -->
-														<div class="grid grid-rows-2 gap-4">
-															<img src="https://images.pexels.com/photos/4440537/pexels-photo-4440537.jpeg?auto=compress&cs=tinysrgb&w=600"
-																alt="Oven Cleaning" class="rounded-lg w-full h-48 object-cover" />
-															<img src="https://images.pexels.com/photos/6195111/pexels-photo-6195111.jpeg?auto=compress&cs=tinysrgb&w=600"
-																alt="Stove Cleaning" class="rounded-lg w-full h-48 object-cover" />
-														</div>
-													</div>
+									</div>
+
+									<!-- CTA Banner -->
+									<div class="max-w-screen-xl mx-auto px-6 py-8">
+										<div
+											class="bg-teal-700 rounded-lg text-white p-6 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+											<div class="text-center md:text-left">
+												<h3 class="text-xl font-medium">Book Your Cleaning Today!</h3>
+												<p class="text-sm text-teal-100">Contact us for a free quote and
+													immediate availability.</p>
+											</div>
+											<a href="#"
+												class="inline-block px-8 py-3 bg-white text-teal-700 font-medium rounded-lg shadow-md hover:bg-teal-50 transition duration-300">
+												Get Instant Price
+											</a>
+										</div>
+									</div>
+
+									<!-- Extras Section -->
+									<div class="mx-auto p-6 max-w-screen-xl">
+										<div class="grid md:grid-cols-2 gap-6 items-center">
+											<!-- Images Grid -->
+											<div class="grid grid-cols-2 gap-4">
+												<!-- Large Image -->
+												<img src="https://images.pexels.com/photos/9462143/pexels-photo-9462143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+													alt="Cleaning" class="rounded-lg w-full h-48 object-cover" />
+												<!-- Nested Grid for Two Images -->
+												<div class="grid grid-rows-2 gap-4">
+													<img src="https://images.pexels.com/photos/4440537/pexels-photo-4440537.jpeg?auto=compress&cs=tinysrgb&w=600"
+														alt="Oven Cleaning"
+														class="rounded-lg w-full h-48 object-cover" />
+													<img src="https://images.pexels.com/photos/6195111/pexels-photo-6195111.jpeg?auto=compress&cs=tinysrgb&w=600"
+														alt="Stove Cleaning"
+														class="rounded-lg w-full h-48 object-cover" />
 												</div>
-						
-												<!-- Content Section -->
-												<div>
-													<h2 class="text-3xl font-semibold mb-4">Add Ons for Flat Rate Cleaning</h2>
-													<p class="text-gray-600 mb-6">Sometimes you just need some extra TLC! If you're looking for
-														some additional help around the house, please let us know. Our cleaners can tackle any
-														of the following extras listed below.</p>
-						
-													<div class="bg-white p-6 rounded-lg shadow-md">
-														<h3 class="text-xl font-semibold mb-4">Flat Rate Cleaning Extras Pricing</h3>
-														<ul class="text-gray-700 space-y-2">
-															<li class="flex justify-between border-b pb-2"><span>Deep clean</span>
-																<span>$159</span></li>
-															<li class="flex justify-between border-b pb-2"><span>Oven clean</span>
-																<span>$79</span></li>
-															<li class="flex justify-between border-b pb-2"><span>Clean interior windows</span>
-																<span>$79</span></li>
-															<li class="flex justify-between border-b pb-2"><span>Clean inside the fridge</span>
-																<span>$60</span></li>
-															<li class="flex justify-between border-b pb-2"><span>Clean inside cabinets</span>
-																<span>$40</span></li>
-															<li class="flex justify-between border-b pb-2"><span>Additional room/s</span>
-																<span>$40</span></li>
-															<li class="flex justify-between"><span>Housekeeping tasks</span> <span>$26</span>
-															</li>
-														</ul>
-													</div>
-						
+											</div>
+											<!-- Content Section -->
+											<div>
+												<h2 class="text-3xl font-semibold mb-4 text-teal-900">Add Ons for Flat
+													Rate Cleaning</h2>
+												<p class="text-gray-700 mb-6 leading-relaxed">
+													Sometimes you just need some extra TLC! If you're looking for some
+													additional help around the
+													house, please let us know. Our cleaners can tackle any of the
+													following extras listed below.
+												</p>
+												<div class="bg-white p-6 rounded-lg shadow-md">
+													<h3 class="text-xl font-semibold mb-4 text-teal-800">Flat Rate
+														Cleaning Extras Pricing</h3>
+													<ul class="text-gray-700 space-y-2">
+														<li class="flex justify-between border-b pb-2">
+															<span>Deep clean</span>
+															<span>$159</span>
+														</li>
+														<li class="flex justify-between border-b pb-2">
+															<span>Oven clean</span>
+															<span>$79</span>
+														</li>
+														<li class="flex justify-between border-b pb-2">
+															<span>Clean interior windows</span>
+															<span>$79</span>
+														</li>
+														<li class="flex justify-between border-b pb-2">
+															<span>Clean inside the fridge</span>
+															<span>$60</span>
+														</li>
+														<li class="flex justify-between border-b pb-2">
+															<span>Clean inside cabinets</span>
+															<span>$40</span>
+														</li>
+														<li class="flex justify-between border-b pb-2">
+															<span>Additional room/s</span>
+															<span>$40</span>
+														</li>
+														<li class="flex justify-between">
+															<span>Housekeeping tasks</span>
+															<span>$26</span>
+														</li>
+													</ul>
+												</div>
+												<button
+													class="mt-6 px-6 py-3 bg-teal-800 text-white rounded-lg shadow-md hover:bg-teal-600 transition-colors">
+													Book Now
+												</button>
+											</div>
+										</div>
+									</div>
+									<section class="container mx-auto px-4 md:px-8 py-12 flex flex-col">
+
+										<div class="text-center mb-12">
+											<p class="text-teal-800 font-semibold tracking-wider mb-2 uppercase">
+
+											<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-black">Our
+												Pricing</h2>
+										</div>
+
+										<div class="flex md:flex-row flex-col justify-center items-center gap-10">
+											<!-- House Cleaning Card -->
+											<div id="house-cleaning"
+												class="rounded-xl  md:w-[55rem] md:h-[30rem] overflow-hidden bg-white shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl">
+
+												<div class="p-6 space-y-4">
+
+													<h2 class="text-2xl font-bold text-teal-800">Standard</h2>
+													<p class="text-black text-lg font-semibold">$40 <span
+															class="text-sm">per hour</span></p>
+													<ul class="mt-4 space-y-2 text-gray-600">
+														<li>&#10003; General dusting and vacuuming</li>
+														<li>&#10003; Bathroom cleaning</li>
+														<li>&#10003; Kitchen cleaning</li>
+														<li>&#10003; Floor mopping</li>
+													</ul>
 													<button
-														class="mt-6 px-6 py-3 bg-teal-800 text-white rounded-lg shadow-md hover:bg-teal-700">Book
+														class="mt-4 w-full bg-teal-800 text-white py-2 rounded-lg hover:bg-teal-900">Book
+														Now</button>
+
+												</div>
+											</div>
+											<div id="bond-cleaning"
+												class="rounded-xl  md:w-[55rem] md:h-[30rem] overflow-hidden bg-white shadow-lg border-2 border-teal-800 transition-transform hover:-translate-y-1 hover:shadow-xl">
+												<div class="p-6  space-y-4">
+													<h2 class="text-2xl font-bold text-teal-800">Deep Clean</h2>
+													<p class="text-gray-700 text-lg font-semibold">$55 <span
+															class="text-sm">per hour</span></p>
+													<ul class="mt-4 space-y-2 text-gray-600">
+														<li class="flex items-center"><span
+																class="text-teal-800 mr-2">&#10003;</span> All standard
+															cleaning tasks</li>
+														<li class="flex items-center"><span
+																class="text-teal-800 mr-2">&#10003;</span> Inside
+															cabinets and appliances</li>
+														<li class="flex items-center"><span
+																class="text-teal-800 mr-2">&#10003;</span> Window tracks
+															and blinds</li>
+														<li class="flex items-center"><span
+																class="text-teal-800 mr-2">&#10003;</span> Baseboards
+															and door frames</li>
+													</ul>
+													<button
+														class="mt-4 w-full bg-teal-800 text-white py-2 rounded-lg hover:bg-teal-900 transition-all">Book
 														Now</button>
 												</div>
 											</div>
-										</div>
-										<div class="max-w-6xl bg-teal-800  rounded-lg mx-auto px-6 py-12">
-											<div class="grid md:grid-cols-2 gap-8 items-center">
+
+											<div id="office-cleaning"
+												class="rounded-xl border-2 border-teal-800 md:w-[55rem] md:h-[30rem] overflow-hidden bg-white shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl">
+
 												<div class="p-6 space-y-4">
-													
-													<h2 class="text-3xl font-bold text-white">House Cleaning</h2>
-													<p class="text-white leading-relaxed">
-														We clean your house according to your needs and preferences. Our
-														permanent
-														employee cleaners get every nook, cranny, and corner.
-													</p>
-													<ul class="space-y-2">
-														<li class="flex items-start">
-															<svg class="h-5 w-5 text-teal-600 mr-2 mt-0.5"
-																fill="currentColor" viewBox="0 0 20 20">
-																<path fill-rule="evenodd"
-																	d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-																	clip-rule="evenodd"></path>
-															</svg>
-															<span class="text-white">Flat rate or hourly pricing options</span>
+													<h2 class="text-2xl font-bold text-teal-800">Bond Clean</h2>
+													<p class="text-black text-lg font-semibold">From $350 <span
+															class="text-sm">flat rate</span></p>
+													<ul class="mt-4 space-y-2 text-gray-600">
+														<li>&#10003; Full property deep clean</li>
+														<li>&#10003; Oven and rangehood</li>
+														<li>&#10003; Full bathroom sanitation</li>
+														<li>&#10003; Guaranteed bond return</li>
+													</ul>
+													<button
+														class="mt-4 w-full bg-teal-800 text-white py-2 rounded-lg hover:bg-teal-900">Book
+														Now</button>
+												</div>
+											</div>
+
+
+
+
+										</div>
+									</section>
+
+									<!-- Hourly Section -->
+									<div class="max-w-6xl bg-teal-800 rounded-lg mx-auto px-6 py-12">
+										<div class="grid md:grid-cols-2 gap-8 items-center">
+											<!-- Content Block -->
+											<div class="p-6 space-y-4">
+												<h2 class="text-3xl font-bold text-white">House Cleaning</h2>
+												<p class="text-white leading-relaxed">
+													We clean your house according to your needs and preferences. Our
+													permanent employee cleaners
+													get every nook, cranny, and corner.
+												</p>
+												<ul class="space-y-2">
+													<li class="flex items-start">
+														<svg class="h-5 w-5 text-white mr-2 mt-0.5" fill="currentColor"
+															viewBox="0 0 20 20">
+															<path fill-rule="evenodd"
+																d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+																clip-rule="evenodd"></path>
+														</svg>
+														<span class="text-white">Flat rate or hourly pricing
+															options</span>
+													</li>
+													<li class="flex items-start">
+														<svg class="h-5 w-5 text-white mr-2 mt-0.5" fill="currentColor"
+															viewBox="0 0 20 20">
+															<path fill-rule="evenodd"
+																d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+																clip-rule="evenodd"></path>
+														</svg>
+														<span class="text-white">Kitchen, bathrooms, bedrooms, living
+															spaces</span>
+													</li>
+													<li class="flex items-start">
+														<svg class="h-5 w-5 text-white mr-2 mt-0.5" fill="currentColor"
+															viewBox="0 0 20 20">
+															<path fill-rule="evenodd"
+																d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+																clip-rule="evenodd"></path>
+														</svg>
+														<span class="text-white">Add-ons available such as deep
+															cleaning, oven cleaning, and more</span>
+													</li>
+												</ul>
+											</div>
+											<!-- Image -->
+											<div>
+												<img src="https://images.pexels.com/photos/4108712/pexels-photo-4108712.jpeg?auto=compress&cs=tinysrgb&w=600"
+													alt="Bathroom Image" class="rounded-lg shadow-lg w-full" />
+											</div>
+										</div>
+
+										<!-- Hourly Price List -->
+										<div class="mt-12">
+											<h3 class="text-xl text-white font-semibold text-center mb-6">Hourly Rate
+												Cleaning Price List</h3>
+											<div
+												class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+												<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
+													<p class="text-2xl font-bold">$63</p>
+													<p class="text-sm font-semibold mt-2">WEEKLY</p>
+												</div>
+												<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
+													<p class="text-2xl font-bold">$63</p>
+													<p class="text-sm font-semibold mt-2">FORTNIGHTLY</p>
+												</div>
+												<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
+													<p class="text-2xl font-bold">$66.50</p>
+													<p class="text-sm font-semibold mt-2">MONTHLY</p>
+												</div>
+												<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
+													<p class="text-2xl font-bold">$70</p>
+													<p class="text-sm font-semibold mt-2">ONE-TIME</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- Book Now Button -->
+										<div class="flex justify-center mt-8">
+											<a href="#"
+												class="inline-block px-8 py-3 bg-white text-teal-700 font-medium rounded-lg shadow-md hover:bg-teal-50 transition duration-300">
+												Book Now
+											</a>
+										</div>
+									</div>
+
+									<!-- FAQ Section -->
+									<div class="max-w-6xl mx-auto p-6">
+										<h2 class="text-3xl font-semibold text-center mb-6 text-teal-900">More
+											Information On Our Pricing</h2>
+										<div class="grid md:grid-cols-2 gap-4">
+											<div class="bg-white p-4 rounded-lg shadow-md">
+												<button
+													class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
+													onclick="toggleFAQ(1)">
+													What’s included in the cost of my cleaning service?
+													<span class="text-teal-800">+</span>
+												</button>
+												<p id="faq1"
+													class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">
+													Our cleaning service includes dusting, vacuuming, mopping, and
+													kitchen and bathroom cleaning.
+												</p>
+											</div>
+											<div class="bg-white p-4 rounded-lg shadow-md">
+												<button
+													class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
+													onclick="toggleFAQ(2)">
+													How many hours should I book for my cleaning service?
+													<span class="text-teal-800">+</span>
+												</button>
+												<p id="faq2"
+													class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">
+													The duration depends on the size of your home and the level of
+													cleaning required.
+												</p>
+											</div>
+											<div class="bg-white p-4 rounded-lg shadow-md">
+												<button
+													class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
+													onclick="toggleFAQ(3)">
+													Should I choose a flat rate or hourly service?
+													<span class="text-teal-800">+</span>
+												</button>
+												<p id="faq3"
+													class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">
+													Flat rate is best for complete cleaning, while hourly service is
+													better for specific tasks.
+												</p>
+											</div>
+											<div class="bg-white p-4 rounded-lg shadow-md">
+												<button
+													class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
+													onclick="toggleFAQ(4)">
+													Why is the bond cleaning hourly rate more than house cleaning?
+													<span class="text-teal-800">+</span>
+												</button>
+												<p id="faq4"
+													class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">
+													Bond cleaning requires deeper cleaning and more effort than standard
+													house cleaning.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Script for FAQ toggling -->
+									<script>
+										function toggleFAQ(id) {
+											const answer = document.getElementById(`faq${id}`);
+											answer.classList.toggle("hidden");
+										}
+									</script>
+
+									<!-- Footer Section -->
+									<footer class="bg-[#1b3d32] text-white pt-16 pb-8">
+										<div class="max-w-7xl mx-auto px-4">
+											<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+												<div>
+													<img src="images/logo.png" alt="illawarra Logo"
+														class="h-40 w-auto transition-all duration-300" id="mainLogo">
+													<p class="text-gray-400 mb-4">Your trusted cleaning partner in
+														Australia since 2010. Delivering spotless results and
+														exceptional service.</p>
+													<p class="text-gray-400">ABN: 12 345 678 901</p>
+												</div>
+
+												<div>
+													<h4 class="text-lg font-semibold mb-6 text-white">Quick Links</h4>
+													<ul class="space-y-3">
+														<li><a href="#"
+																class="text-gray-400 hover:text-white transition">Home</a>
 														</li>
-														<li class="flex items-start">
-															<svg class="h-5 w-5 text-teal-600 mr-2 mt-0.5"
-																fill="currentColor" viewBox="0 0 20 20">
-																<path fill-rule="evenodd"
-																	d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-																	clip-rule="evenodd"></path>
-															</svg>
-															<span class="text-white">Kitchen, bathrooms, bedrooms, living spaces</span>
+														<li><a href="#"
+																class="text-gray-400 hover:text-white transition">Services</a>
 														</li>
-														<li class="flex items-start">
-															<svg class="h-5 w-5 text-teal-600 mr-2 mt-0.5"
-																fill="currentColor" viewBox="0 0 20 20">
-																<path fill-rule="evenodd"
-																	d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-																	clip-rule="evenodd"></path>
-															</svg>
-															<span class="text-white">Add-ons available such as deep cleaning, oven cleaning,
-																and more</span>
+														<li><a href="#"
+																class="text-gray-400 hover:text-white transition">About
+																Us</a></li>
+														<li><a href="#"
+																class="text-gray-400 hover:text-white transition">Book
+																Now</a></li>
+													</ul>
+												</div>
+
+												<div>
+													<h4 class="text-lg font-semibold mb-6 text-white">Our Services</h4>
+													<ul class="space-y-3">
+														<li><a href="#"
+																class="text-gray-400 hover:text-white transition">House
+																Cleaning</a></li>
+														<li><a href="#"
+																class="text-gray-400 hover:text-white transition">Office
+																Cleaning</a></li>
+														<li><a href="#"
+																class="text-gray-400 hover:text-white transition">End of
+																Lease Cleaning</a></li>
+														<li><a href="#"
+																class="text-gray-400 hover:text-white transition">Commercial
+																Cleaning</a></li>
+													</ul>
+												</div>
+
+												<div>
+													<h4 class="text-lg font-semibold mb-6 text-white">Contact Info</h4>
+													<ul class="space-y-3">
+														<li class="flex items-start gap-3">
+															<div class="w-5 h-5 flex items-center justify-center mt-1">
+																<i class="ri-map-pin-line text-primary"></i>
+															</div>
+															<span class="text-gray-400">Level 1, 1 Burelli Street,
+																Wollongong, NSW 2500 Wollongong NSW 2500</span>
+														</li>
+														<li class="flex items-center gap-3">
+															<div class="w-5 h-5 flex items-center justify-center">
+																<i class="ri-phone-line text-primary"></i>
+															</div>
+															<span class="text-gray-400">(0416) 592-879</span>
+														</li>
+														<li class="flex items-center gap-3">
+															<div class="w-5 h-5 flex items-center justify-center">
+																<i class="ri-mail-line text-primary"></i>
+															</div>
+															<span class="text-gray-400">info@illawarracrew.com.au</span>
+														</li>
+														<li class="flex items-center gap-3">
+															<div class="w-5 h-5 flex items-center justify-center">
+																<i class="ri-time-line text-primary"></i>
+															</div>
+															<span class="text-gray-400">Mon-Sat: 7:00 AM - 8:00
+																PM</span>
 														</li>
 													</ul>
-													
-												</div>
-												<div>
-													<img src="https://images.pexels.com/photos/4108712/pexels-photo-4108712.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bathroom Image" class="rounded-lg shadow-lg w-full">
 												</div>
 											</div>
-									
-											<div class="mt-12">
-												<h3 class="text-xl text-white font-semibold text-center mb-6">Hourly Rate Cleaning Price List</h3>
-												<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-													<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
-														<p class="text-2xl font-bold">$63</p>
-														<p class="text-sm font-semibold mt-2">WEEKLY</p>
-													</div>
-													<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
-														<p class="text-2xl font-bold">$63</p>
-														<p class="text-sm font-semibold mt-2">FORTNIGHTLY</p>
-													</div>
-													<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
-														<p class="text-2xl font-bold">$66.50</p>
-														<p class="text-sm font-semibold mt-2">MONTHLY</p>
-													</div>
-													<div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
-														<p class="text-2xl font-bold">$70</p>
-														<p class="text-sm font-semibold mt-2">ONE-TIME SERVICES</p>
+
+											<div class="border-t border-gray-800 pt-8">
+												<div
+													class="flex flex-col md:flex-row justify-between items-center gap-6">
+													<div class="flex gap-4">
+														<a href="#"
+															class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+															<i class="ri-facebook-fill text-xl"></i>
+														</a>
+														<a href="#"
+															class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+															<i class="ri-instagram-line text-xl"></i>
+														</a>
+														<a href="#"
+															class="social-icon w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+															<i class="ri-linkedin-fill text-xl"></i>
+														</a>
 													</div>
 												</div>
-											</div>
-									
-											<div class="flex justify-center mt-8">
-												<a href="#"
-																		class="inline-block px-8 py-3 bg-white text-teal-700 font-medium rounded-lg shadow-lg hover:bg-teal-50 transition duration-300">
-																		Book Now
-																	</a>
-											</div>
-										</div>
-										<!-- FAQ Section -->
-										<div class="max-w-6xl mx-auto p-6">
-											<h2 class="text-3xl font-semibold text-center mb-6">More Information On Our Pricing</h2>
-											<div class="grid md:grid-cols-2 gap-4">
-												<div class="bg-white p-4 rounded-lg shadow-md">
-													<button class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
-														onclick="toggleFAQ(1)">
-														What’s included in the cost of my cleaning service?
-														<span class="text-teal-800">+</span>
-													</button>
-													<p id="faq1" class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">Our
-														cleaning service includes dusting, vacuuming, mopping, and kitchen and bathroom
-														cleaning.</p>
-												</div>
-												<div class="bg-white p-4 rounded-lg shadow-md">
-													<button class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
-														onclick="toggleFAQ(2)">
-														How many hours should I book for my cleaning service?
-														<span class="text-teal-800">+</span>
-													</button>
-													<p id="faq2" class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">The
-														duration depends on the size of your home and the level of cleaning required.</p>
-												</div>
-												<div class="bg-white p-4 rounded-lg shadow-md">
-													<button class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
-														onclick="toggleFAQ(3)">
-														Should I choose a flat rate or hourly service?
-														<span class="text-teal-800">+</span>
-													</button>
-													<p id="faq3" class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">Flat
-														rate is best for complete cleaning, while hourly service is better for specific tasks.
-													</p>
-												</div>
-												<div class="bg-white p-4 rounded-lg shadow-md">
-													<button class="w-full flex justify-between items-center text-lg font-medium text-gray-700"
-														onclick="toggleFAQ(4)">
-														Why is the bond cleaning hourly rate more than house cleaning?
-														<span class="text-teal-800">+</span>
-													</button>
-													<p id="faq4" class="hidden text-gray-600 mt-2 transition-all duration-300 ease-in-out">Bond
-														cleaning requires deeper cleaning and more effort than standard house cleaning.</p>
+
+												<div class="text-center mt-8 text-gray-500">
+													<p>&copy; <span id="copyright-year"></span> Illawarra Crew
+														Australia. All rights reserved.</p>
 												</div>
 											</div>
 										</div>
-						
-										<script>
-											function toggleFAQ(id) {
-												let answer = document.getElementById(`faq${id}`);
-												answer.classList.toggle("hidden");
-												answer.classList.toggle("opacity-0");
-												answer.classList.toggle("opacity-100");
-											}
-										</script>
-								
-	<footer class="bg-gradient-to-r from-teal-800 to-teal-800 text-white py-12">
-		<div class="container mx-auto px-6 space-y-8">
-			<!-- Main Footer Content -->
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+									</footer>
 
-				<!-- Column 1: Logo & Social -->
-				<div class="flex flex-col items-center md:items-start space-y-6">
-					<img src="./images/elvllog.png" alt="Maid2Match Logo" class="h-20 mb-4">
-					<p class="text-lg font-light">Australia's Favourite Cleaning Service</p>
-					<a href="#"
-						class="inline-block px-8 py-3 bg-white text-teal-700 font-medium rounded-lg shadow-lg hover:bg-teal-50 transition duration-300">
-						BOOK NOW
-					</a>
-					<!-- Social Media Icons -->
-					<div class="flex space-x-4 mt-4">
-						<a href="https://www.facebook.com/Maid2Match/" target="_blank" rel="noopener"
-							class="hover:text-teal-300 transition-colors">
-							<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-label="Facebook">
-								<path fill-rule="evenodd"
-									d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-									clip-rule="evenodd"></path>
-							</svg>
-						</a>
-						<a href="https://www.instagram.com/maid2match/?hl=en" target="_blank" rel="noopener"
-							class="hover:text-teal-300 transition-colors">
-							<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-label="Instagram">
-								<path fill-rule="evenodd"
-									d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-									clip-rule="evenodd"></path>
-							</svg>
-						</a>
-						<a href="https://www.tiktok.com/@maid2match" target="_blank" rel="noopener"
-							class="hover:text-teal-300 transition-colors">
-							<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-label="TikTok">
-								<path
-									d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
-							</svg>
-						</a>
-					</div>
-				</div>
-
-				<!-- Column 2: Quick Links -->
-				<div>
-					<h3 class="text-xl font-bold mb-6 border-b border-teal-500 pb-2">Quick Links</h3>
-					<ul class="space-y-3">
-						<li><a href="/" class="hover:text-teal-300 transition-colors">Home</a></li>
-						<li><a href="/services" class="hover:text-teal-300 transition-colors">Our Services</a></li>
-						<li><a href="/locations" class="hover:text-teal-300 transition-colors">Locations</a></li>
-						<li><a href="/pricing" class="hover:text-teal-300 transition-colors">Pricing</a></li>
-						<li><a href="/about" class="hover:text-teal-300 transition-colors">About Us</a></li>
-						<li><a href="/blog" class="hover:text-teal-300 transition-colors">Cleaning Blog</a></li>
-					</ul>
-				</div>
-
-				<!-- Column 3: Contact Info -->
-				<div>
-					<h3 class="text-xl font-bold mb-6 border-b border-teal-500 pb-2">Contact Us</h3>
-					<ul class="space-y-3">
-						<li class="flex items-start">
-							<svg class="w-5 h-5 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-								</path>
-							</svg>
-							<a href="mailto:info@maidtomatch.com.au"
-								class="hover:text-teal-300 transition-colors">info@illawaracrew.com.</a>
-						</li>
-						<li class="flex items-start">
-							<svg class="w-5 h-5 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
-								</path>
-							</svg>
-							<a href="tel:1800207686" class="hover:text-teal-300 transition-colors">1800 207 686</a>
-						</li>
-						<li class="flex items-start">
-							<svg class="w-5 h-5 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-								</path>
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-									d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-							</svg>
-							<span>Serving all major Australian cities</span>
-						</li>
-					</ul>
-				</div>
+									<script>
+										document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+									</script>
+								</div>
+							</div>
+						</div>
+						</footer>
 
 
-
-				<!-- Bottom Bar -->
-
-			</div>
-			<div class="mt-12 pt-8 border-t border-teal-500">
-				<div class="flex flex-col md:flex-row justify-between items-center">
-					<p class="text-sm mb-4 md:mb-0">© 2025 Illavara-Crew. All rights reserved.</p>
-					<div class="flex space-x-6">
-						<a href="#" class="text-sm hover:text-teal-300 transition-colors">Privacy Policy</a>
-						<a href="#" class="text-sm hover:text-teal-300 transition-colors">Terms & Conditions</a>
-						<a href="#" class="text-sm hover:text-teal-300 transition-colors">Sitemap</a>
-					</div>
 				</div>
 			</div>
-	</footer>
-
+		</div>
+		</article>
 	</div>
 	</div>
 
